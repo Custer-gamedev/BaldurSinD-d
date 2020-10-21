@@ -15,11 +15,11 @@ public class Destination_trigger : MonoBehaviour
     {
         
     }
-   private void OnTriggerEnter(Collider col) {
+  /* private void OnTriggerEnter(Collider col) {
        
         if(col.gameObject.tag == "Boss"){
             print("collided correctly");
             boss.GetComponent<Boss_Dwarf_Controller>().Chargeattack();
         }
-   }
+   }*/
 }

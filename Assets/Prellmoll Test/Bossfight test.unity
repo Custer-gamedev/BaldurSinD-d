@@ -542,6 +542,7 @@ MonoBehaviour:
   maxAllowedSpawn: 0
   waitTime: 3
   roomsList: []
+  surfaces: []
   bossSpawn: 0
   treasureSpawn: 0
   bossSpawnPoint: {fileID: 0}
@@ -668,7 +669,7 @@ GameObject:
   - component: {fileID: 945278274}
   m_Layer: 0
   m_Name: dest1
-  m_TagString: Untagged
+  m_TagString: M_Node
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -726,7 +727,7 @@ GameObject:
   - component: {fileID: 958440191}
   m_Layer: 0
   m_Name: dest3
-  m_TagString: Untagged
+  m_TagString: M_Node
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1088,7 +1089,7 @@ GameObject:
   - component: {fileID: 1282398354}
   m_Layer: 0
   m_Name: dest4
-  m_TagString: Untagged
+  m_TagString: M_Node
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1333,7 +1334,7 @@ GameObject:
   - component: {fileID: 1555018019}
   m_Layer: 0
   m_Name: dest2
-  m_TagString: Untagged
+  m_TagString: M_Node
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1654,6 +1655,10 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 11
       objectReference: {fileID: 0}
+    - target: {fileID: 4967711681543136996, guid: 35d14b533dea0b548a964060e9c72e7d, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5561026756584560312, guid: 35d14b533dea0b548a964060e9c72e7d, type: 3}
       propertyPath: m_LocalPosition.x
       value: 9
@@ -1728,10 +1733,11 @@ MonoBehaviour:
   dest2: {fileID: 1555018017}
   dest3: {fileID: 958440189}
   dest4: {fileID: 1282398352}
-  arrow: {fileID: 0}
+  arrow: {fileID: 5102993994944742859, guid: a916438edf4358e4e9f8fcf7dc654b89, type: 3}
   muzzle: {fileID: 1213214520}
   player: {fileID: 1155076366}
-  chargeTime: 3
+  chargeTime: 1
+  currentFacing: {x: 0, y: 0, z: 0}
 --- !u!195 &8694546398510160887
 NavMeshAgent:
   m_ObjectHideFlags: 0

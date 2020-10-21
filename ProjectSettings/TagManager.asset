@@ -23,6 +23,7 @@ TagManager:
   - Ground
   - Door
   - Wall
+  - M_Node
   layers:
   - Default
   - TransparentFX
