@@ -1,0 +1,86 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &157297853616912577
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 157297853616912583}
+  - component: {fileID: 157297853616912582}
+  - component: {fileID: 157297853616912580}
+  - component: {fileID: 157297853616912581}
+  m_Layer: 0
+  m_Name: GMaster
+  m_TagString: GameController
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &157297853616912583
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 157297853616912577}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 274.13727, y: -237.53352, z: -125.45399}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &157297853616912582
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 157297853616912577}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b75ac7c754625742866438058ebade2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemySet:
+  - {fileID: 11400000, guid: 3bc32b4ac9948e341aa4c301546ca22d, type: 2}
+  - {fileID: 11400000, guid: 7b27e4e888fc1ad48aac8a6fedb18d33, type: 2}
+  - {fileID: 11400000, guid: 62dda916216083e41955f1a538293739, type: 2}
+  - {fileID: 11400000, guid: 9a962fa44b8290941bc7b59ebacfcd34, type: 2}
+  - {fileID: 11400000, guid: 2af95e7c5376d1049b0713b55cae94d7, type: 2}
+  enemiesAlive: []
+  boss: {fileID: 4014719368100714108, guid: 33236648cb03cbc4aa58b7f3742d2c44, type: 3}
+--- !u!114 &157297853616912580
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 157297853616912577}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bc7535bcfcd47f9479c6d830b42f2b4c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  coinsText: {fileID: 0}
+--- !u!114 &157297853616912581
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 157297853616912577}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0695c96627bfbb648a3768ca6bea53a1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tObject:
+  - {fileID: 8480298444863267931, guid: 49d1bdafd4a192c468cf5daf3ba23579, type: 3}
+  - {fileID: 6145318601634545203, guid: c2852fca4216a9640b45ed2e30bb7f13, type: 3}
+  - {fileID: 4169006360727894724, guid: aca2c337952cac842812911848a287c5, type: 3}
+  - {fileID: 2752411537107358437, guid: 4508d8dd520327d4ea4b362f10d6cc0d, type: 3}
+  testSpawn: {fileID: 0}
