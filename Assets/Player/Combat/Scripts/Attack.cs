@@ -14,6 +14,7 @@ public class Attack : MonoBehaviour
     public float CoolDownTime2, AtkDelay2;
     public GameObject SecondHitBox, TargetIndicator, CD2, AxeOnMap;
     public GameObject ATCK2canvas;
+    public Vector3 Offset2;
     public bool Charching = true, GotAxe = true, SpawnArrow = true;
 
     [Header("Third Attack")]
@@ -76,7 +77,7 @@ public class Attack : MonoBehaviour
 
                 if (SpawnArrow)
                 {
-                    Instantiate(TargetIndicator, transform.position + transform.forward, Quaternion.Euler(0, 0, 0), ATCK2canvas.transform);
+                    Instantiate(TargetIndicator, (transform.position + Offset2) + transform.forward, Quaternion.Euler(0, 0, 0), ATCK2canvas.transform);
                     SpawnArrow = false;
                 }
             }
@@ -87,7 +88,7 @@ public class Attack : MonoBehaviour
                 if (AtkDelay2 <= 0 && GameObject.FindGameObjectWithTag("ATCK") == null && GameObject.FindGameObjectWithTag("ATCK3") == null )
                 {
                     Attacking = false;
-                    Instantiate(SecondHitBox, transform.position + transform.forward, Quaternion.Euler(0, 0, 0), null);
+                    Instantiate(SecondHitBox, (transform.position + Offset2) + transform.forward, Quaternion.Euler(0, 0, 0), null);
                     AtkDelay2 = CoolDownTime2;
                     GotAxe = false;
 

@@ -15,8 +15,6 @@ public class Movement : MonoBehaviour
     {
         Rb = GetComponent<Rigidbody>();
         Target = GetComponentInChildren<MoveDirectionTest>().transform;
-
-
     }
 
     private void Update()
@@ -28,9 +26,8 @@ public class Movement : MonoBehaviour
         RaycastHit Hit;
         if (Physics.Raycast(Camera.main.ScreenToWorldPoint(Input.mousePosition), Camera.main.transform.forward, out Hit, Mathf.Infinity))
         {
-                Debug.DrawLine(Camera.main.ScreenToWorldPoint(Input.mousePosition), Hit.point, Color.magenta);
-
-            //Mabye Mabye not the right movment / camera for this game
+            Debug.DrawLine(Camera.main.ScreenToWorldPoint(Input.mousePosition), Hit.point, Color.magenta);
+            //todo: Mabye not the right movment / camera for this game  
             if (Attaking)
             {
                 transform.LookAt(new Vector3(Hit.point.x, transform.position.y, Hit.point.z));

@@ -19,6 +19,7 @@ public class Assgaurd : MonoBehaviour
     {
         if (PushBarrier.radius < PushableRange && PushBarrier.radius != 0)
             PushBarrier.radius += ExpandSize;
+        Physics.OverlapSphere(transform.position, PushBarrier.radius);
     }
 
     void DestroyAfter()
@@ -29,6 +30,6 @@ public class Assgaurd : MonoBehaviour
     private void OnDrawGizmos()
     {
         Gizmos.color = Color.cyan;
-        Gizmos.DrawSphere(transform.position, PushBarrier.radius + ExpandSize);
+        //Gizmos.DrawSphere(transform.position, PushBarrier.radius + ExpandSize);
     }
 }

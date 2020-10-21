@@ -7,10 +7,10 @@ using UnityEngine;
 public class WrathAxe : MonoBehaviour
 {
     Rigidbody Rb;
-    public float Speed;
+    public float throwSpeed;
     public GameObject AxeLandingMarker;
     public bool Thrown = true;
-    public GameObject Player;
+    public GameObject Player, Particels;
 
     float curontXrotation;
     Vector3 lookAtMarker;
@@ -34,7 +34,7 @@ public class WrathAxe : MonoBehaviour
                 transform.LookAt(AxeLandingMarker.transform, Vector3.up);
                 inAir = true;
             }
-            transform.position = Vector3.MoveTowards(transform.position, AxeLandingMarker.transform.position, Time.deltaTime * Speed);
+            transform.position = Vector3.MoveTowards(transform.position, AxeLandingMarker.transform.position, Time.deltaTime * throwSpeed);
             transform.Rotate(axeSpinSpeed * Time.deltaTime,0,0,Space.Self);
 
             Debug.Log("ALTTID");
@@ -56,7 +56,8 @@ public class WrathAxe : MonoBehaviour
             case ("ATCK2axeMarker"):
                 Thrown = false;
                 Destroy(other.gameObject);
-            break;
+                Instantiate(Particels, transform.position + new Vector3(0,-1,0), Quaternion.identity);
+                break;
 
             case ("Player"):
                 if (!Thrown)
@@ -74,7 +75,9 @@ public class WrathAxe : MonoBehaviour
                 break;
 
             case ("Ground"):
+                Instantiate(Particels, transform.position + new Vector3(0, -1, 0), Quaternion.identity);
                 Destroy(GameObject.Find("AxeLandingMark"));
+
             break;
         }
     }
