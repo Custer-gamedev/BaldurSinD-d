@@ -93,7 +93,6 @@ GameObject:
   - component: {fileID: 8287683066429284417}
   - component: {fileID: 5860353629251838661}
   - component: {fileID: 8652577202859372377}
-  - component: {fileID: 1004994191932654065}
   m_Layer: 0
   m_Name: HitBox2
   m_TagString: ATCK2
@@ -133,8 +132,8 @@ MonoBehaviour:
   Speed: 2
   AxeLandingMarker: {fileID: 0}
   Thrown: 1
-  Anim: {fileID: 1004994191932654065}
   Player: {fileID: 0}
+  axeSpinSpeed: 400
 --- !u!65 &5860353629251838661
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -164,25 +163,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 126
   m_CollisionDetection: 0
---- !u!95 &1004994191932654065
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1602500568735229980}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 7134e4f854b4c40489f515cf4f2a1791, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 1
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &5808769139540107743
 GameObject:
   m_ObjectHideFlags: 0

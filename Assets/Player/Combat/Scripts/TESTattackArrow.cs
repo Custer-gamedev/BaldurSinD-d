@@ -22,7 +22,7 @@ public class TESTattackArrow : MonoBehaviour
 
         RaycastHit Hit;
 
-        if(Physics.Raycast(ATCKCam.ScreenToWorldPoint(Input.mousePosition), ATCKCam.transform.forward, out Hit, Mathf.Infinity, GroundLayer))
+        if(Physics.Raycast(ATCKCam.ScreenToWorldPoint(Input.mousePosition), ATCKCam.transform.forward, out Hit, Mathf.Infinity,GroundLayer))
         {
             
             Debug.DrawRay(ATCKCam.ScreenToWorldPoint(Input.mousePosition), ATCKCam.transform.forward * Hit.distance, Color.cyan);
