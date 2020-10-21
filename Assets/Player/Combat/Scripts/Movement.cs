@@ -35,10 +35,6 @@ public class Movement : MonoBehaviour
             {
                 transform.LookAt(new Vector3(Hit.point.x, transform.position.y, Hit.point.z));
             }
-
-
-
-
         }      
     }
 

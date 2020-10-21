@@ -14,11 +14,9 @@ public class PlayerStats : MonoBehaviour {
         UpdateUI();
     }
 
-    private void Update () {
-    
-    }
     public void TakeDamage (float amount) {
         health -= amount;
+        UpdateUI();
     }
 
     public void UpdateUI() {
