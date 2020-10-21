@@ -167,7 +167,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hp: 10
   damage: 1
-  souls: 1
+  soul: {fileID: 4681955541393232707, guid: b107bcae72dd651409d7042ba4edd3c9, type: 3}
 --- !u!114 &6490222628365045511
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -190,7 +190,7 @@ MonoBehaviour:
   spottingSize: 5
   shootTimer: 0
   waitTime: 3
-  arrowSpeed: 5
+  arrowSpeed: 20
 --- !u!1001 &7706415441743153315
 PrefabInstance:
   m_ObjectHideFlags: 0

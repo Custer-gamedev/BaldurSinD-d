@@ -4,39 +4,40 @@ using UnityEngine;
 public class EnemyStats : MonoBehaviour
 {
     public float hp, damage;
-    public bool souls;
+    public GameObject soul;
+    public bool Souls() {
+    int rand = Random.Range(0, 4);
+        if (rand == 1)
+            return true;
+        else
+            return false;
+    }
+    
     Color thisColor;
     private EnemiesList enemiesList;
     void Awake()
     {
         enemiesList = GameObject.FindGameObjectWithTag("GameController").GetComponent<EnemiesList>();
+        
         thisColor = GetComponent<Renderer>().material.color;
     }
     void Update()
     {
         if (hp <= 0)
         {
-            if (souls == true)
+            if (Souls() == true)
             {
-
-                GameObject bossRoom = GameObject.FindGameObjectWithTag("BossRoom");
-                GetComponent<Collider>().enabled = false;
-                GetComponent<MeshRenderer>().enabled = false;
-                transform.GetChild(0).gameObject.SetActive(true);
-                transform.position = Vector3.Lerp(transform.position, bossRoom.transform.position, .1f * Time.deltaTime);
-                Destroy(gameObject, 3f);
+                Instantiate(soul, transform.position, transform.rotation);
+                Destroy(gameObject);
                 enemiesList.enemiesAlive.Remove(this.gameObject);
-
             }
             else
             {
                 Destroy(gameObject);
                 enemiesList.enemiesAlive.Remove(this.gameObject);
-
             }
 
         }
-
     }
     void OnTriggerEnter(Collider other)
     {

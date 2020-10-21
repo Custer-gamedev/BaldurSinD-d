@@ -109,8 +109,8 @@ public class Attack : MonoBehaviour
             if (AtkDelay3 <= 0)
             {
                 Attacking = true;
-               GameObject tempAss = Instantiate(ThirdHitBox, transform.position, Quaternion.Euler(0, 0, 0), this.transform);
-               Destroy(tempAss, 1f);
+                GameObject tempAss = Instantiate(ThirdHitBox, transform.position, Quaternion.Euler(0, 0, 0), this.transform);
+                Destroy(tempAss, 1f);
                 CD3.SetActive(true);
                 AtkDelay3 = CoolDownTime3;
             }

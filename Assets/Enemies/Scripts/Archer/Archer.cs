@@ -27,7 +27,7 @@ public class Archer : MonoBehaviour
                 GameObject arrowClone = Instantiate(arrow, transform.position,Quaternion.LookRotation(player.transform.position - transform.position));
                 arrowClone.AddComponent<Ranged_Damage>();
                 arrowClone.GetComponent<Ranged_Damage>().eStats = GetComponent<EnemyStats>();
-                arrowClone.GetComponent<Rigidbody>().AddForce(transform.position + (player.transform.position - transform.position) * arrowSpeed, ForceMode.Impulse);
+                arrowClone.GetComponent<Rigidbody>().AddForce(transform.forward * arrowSpeed, ForceMode.Impulse);
                 Destroy(arrowClone, 4f);
                 shootTimer = waitTime;
             }

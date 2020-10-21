@@ -16,6 +16,7 @@ public class PlayerStats : MonoBehaviour {
 
     public void TakeDamage (float amount) {
         health -= amount;
+      
         UpdateUI();
     }
 
