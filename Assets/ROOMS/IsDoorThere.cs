@@ -4,9 +4,44 @@ using UnityEngine;
 
 public class IsDoorThere : MonoBehaviour
 {
-  private void OnTriggerEnter(Collider other) {
-      if(other.tag != "Door"){
-          Destroy(transform.parent.gameObject);
-      }
-  }
+    bool isDoor = false;
+    int cols;
+    float waitTime = 2;
+
+    bool IsCollding()
+    {
+        if (cols == 0)
+        {
+            return false;
+        }
+        else
+            return true;
+    }
+    public void Update()
+    {
+
+        if (waitTime <= 0)
+        {
+            if (IsCollding() == false)
+            {
+                Destroy(transform.parent.gameObject);
+
+            }
+            else if (IsCollding() == true)
+                Destroy(this);
+
+        }
+        else
+            waitTime -= Time.deltaTime;
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+
+        if (other.tag == "Door")
+        {
+            cols++;
+        }
+
+    }
 }
