@@ -10,11 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7a284f2545677704ba29ab0d1fb9887a, type: 3}
-  m_Name: Baldur's Courage
+  m_Name: Rapier
   m_EditorClassIdentifier: 
-  itemName: Baldur's Courage
-  description: You feel powerfull! ++ Damage
-  model: {fileID: 0}
-  playerHealthIncrease: 1
-  playerDamageIncrease: 10
-  playerMovementSpeedIncrease: 1
+  itemName: Rapier
+  description: How did this get here? ++++AttackSpeed
+  playerHealthIncrease: 0
+  playerDamageIncrease: 0
+  playerMovementSpeedIncrease: 0
+  playerAttackSpeedIncrease: 4
