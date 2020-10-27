@@ -2498,6 +2498,14 @@ PrefabInstance:
       propertyPath: attackSTxt
       value: 
       objectReference: {fileID: 768305949}
+    - target: {fileID: 8784954912145017037, guid: 44a486551260c6543b1d5c1b855c1953, type: 3}
+      propertyPath: health
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8784954912145017037, guid: 44a486551260c6543b1d5c1b855c1953, type: 3}
+      propertyPath: maxHealth
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 8784954912145017039, guid: 44a486551260c6543b1d5c1b855c1953, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.5

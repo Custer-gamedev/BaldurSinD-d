@@ -12,7 +12,7 @@ public class PlayerMove : MonoBehaviour
 	public Transform body;
 	public Transform target;
 	PlayerStats playerStats;
-	Vector3 forward, right;
+	Vector3 forward, right, moveDir;
 
 	private void Start()
 	{
@@ -28,11 +28,19 @@ public class PlayerMove : MonoBehaviour
 	}
 	private void Update()
 	{
-		Move();
+
+		float moveFloatX = Input.GetAxisRaw("Horizontal");
+		float moveFloatY = Input.GetAxisRaw("Vertical");
+
+		//if (moveFloatX <= 0 || moveFloatX >= 0 || moveFloatY <= 0 || moveFloatY >= 0)
+		if (Input.anyKey)
+			Move();
+
+
+
 		moveSpeed = pStats.speed;
 
 		attacking = GetComponent<Attack>().Attacking;
-		Move();
 		transform.LookAt(target, transform.up);
 
 		RaycastHit Hit;
@@ -48,27 +56,20 @@ public class PlayerMove : MonoBehaviour
 	}
 	void Move()
 	{
-		Vector3 dir = new Vector3(Input.GetAxis("HorizontalKey"), 0, Input.GetAxis("VerticalKey"));
+		moveDir = new Vector3(Input.GetAxis("HorizontalKey"), 0, Input.GetAxis("VerticalKey"));
 		Vector3 rightMove = right * moveSpeed * Time.deltaTime * Input.GetAxis("HorizontalKey");
 		Vector3 upMove = forward * moveSpeed * Time.deltaTime * Input.GetAxis("VerticalKey");
 
-		Vector3 moveDir = Vector3.Normalize(rightMove + upMove);
+		moveDir = Vector3.Normalize(rightMove + upMove);
 
-		//ROTASJON
+		if (moveDir == Vector3.zero)
+			return;
+
 		transform.forward = moveDir;
-
 		//BEVEGELSE
 		transform.position += rightMove;
 		transform.position += upMove;
 	}
 
 	//Gjør denne senere, men skal rotere langs musa
-	void RotateMouse()
-	{
-		Vector3 mousePos = Input.mousePosition;
-		Vector3 mouseWorld = Camera.main.ScreenToWorldPoint(new Vector3(mousePos.y, body.transform.position.y));
-		Vector3 forward = mouseWorld - body.transform.position;
-		body.transform.rotation = Quaternion.LookRotation(forward, Vector3.up);
-	}
-
 }
