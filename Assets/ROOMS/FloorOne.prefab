@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &4014719368100714108
+--- !u!1 &1575538723986831345
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,47 +8,47 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 970457630028456584}
-  - component: {fileID: 3278545549567622635}
-  - component: {fileID: 4485120233466462715}
-  - component: {fileID: 206868353338691902}
-  - component: {fileID: 8716702261941957511}
+  - component: {fileID: 7958400977779899950}
+  - component: {fileID: 7102994853240815475}
+  - component: {fileID: 7896033583117192039}
+  - component: {fileID: 965749238318043688}
+  - component: {fileID: 798170593260983194}
   m_Layer: 0
-  m_Name: Boss
+  m_Name: PortalFloor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &970457630028456584
+--- !u!4 &7958400977779899950
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4014719368100714108}
+  m_GameObject: {fileID: 1575538723986831345}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 66.10703, y: 1.5926813, z: -0.26031715}
-  m_LocalScale: {x: 3, y: 3, z: 3}
+  m_LocalPosition: {x: -1.93, y: 0, z: -1.34}
+  m_LocalScale: {x: 3, y: 0.2, z: 3}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!33 &3278545549567622635
+--- !u!33 &7102994853240815475
 MeshFilter:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4014719368100714108}
+  m_GameObject: {fileID: 1575538723986831345}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!23 &4485120233466462715
+--- !u!23 &7896033583117192039
 MeshRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4014719368100714108}
+  m_GameObject: {fileID: 1575538723986831345}
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
@@ -83,34 +83,29 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &206868353338691902
+--- !u!65 &965749238318043688
 BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4014719368100714108}
+  m_GameObject: {fileID: 1575538723986831345}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &8716702261941957511
+--- !u!114 &798170593260983194
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4014719368100714108}
+  m_GameObject: {fileID: 1575538723986831345}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a3481d58dd0e21f4fa05fc9bc62ee6c6, type: 3}
+  m_Script: {fileID: 11500000, guid: 0bcc9b076cc9b484c93b6f865bc15eff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hp: 100
-  damage: 0
-  soul: {fileID: 0}
-  nextFloor: {fileID: 1575538723986831345, guid: 60ae26fdaf9da344f90e7c111053c3a5, type: 3}
-  isThisBoss: 1
-  useSouls: 0
+  floorToLoad: FloorTwo

@@ -4,7 +4,8 @@ using UnityEngine;
 public class EnemyStats : MonoBehaviour
 {
 	public float hp, damage;
-	public GameObject soul;
+	public GameObject soul, nextFloor;
+	public bool isThisBoss, useSouls;
 	public bool Souls()
 	{
 		int rand = Random.Range(0, 4);
@@ -30,16 +31,17 @@ public class EnemyStats : MonoBehaviour
 		if (hp <= 0)
 		{
 			p.Heal(.5f);
-			if (Souls() == true)
+			if (Souls() == true && useSouls == true)
 			{
 				Instantiate(soul, transform.position, transform.rotation);
-				Destroy(gameObject);
-				enemiesList.enemiesAlive.Remove(this.gameObject);
 			}
-			else
+
+			Destroy(gameObject);
+			enemiesList.enemiesAlive.Remove(this.gameObject);
+
+			if (isThisBoss == true)
 			{
-				Destroy(gameObject);
-				enemiesList.enemiesAlive.Remove(this.gameObject);
+				Instantiate(nextFloor, gameObject.transform.position + (new Vector3(0, -1, 0)), transform.rotation);
 			}
 
 		}
