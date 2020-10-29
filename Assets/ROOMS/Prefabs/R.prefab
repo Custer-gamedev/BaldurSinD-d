@@ -41,10 +41,10 @@ GameObject:
   - component: {fileID: 3113363967822835127}
   - component: {fileID: 791645106591504077}
   - component: {fileID: 4217815336316717888}
-  - component: {fileID: 8657897784289480606}
   - component: {fileID: 3586399961547685616}
   - component: {fileID: -5751975106709454272}
   - component: {fileID: -4656433447621388151}
+  - component: {fileID: 1284679278515974994}
   m_Layer: 10
   m_Name: R
   m_TagString: Room
@@ -118,20 +118,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &8657897784289480606
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1351877923514471103}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!114 &3586399961547685616
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -189,6 +175,19 @@ MonoBehaviour:
   m_VoxelSize: 0.16666667
   m_BuildHeightMesh: 0
   m_NavMeshData: {fileID: 0}
+--- !u!65 &1284679278515974994
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1351877923514471103}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 10, y: 2.220446e-16, z: 10}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &2054147459094988076
 GameObject:
   m_ObjectHideFlags: 0

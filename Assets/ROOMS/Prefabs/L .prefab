@@ -427,10 +427,10 @@ GameObject:
   - component: {fileID: 7227559039364565090}
   - component: {fileID: 6538694565273820010}
   - component: {fileID: 3495297193600461120}
-  - component: {fileID: 303828247847310756}
   - component: {fileID: 2875474042467200216}
   - component: {fileID: 3798031969514295153}
   - component: {fileID: -6068396471409315602}
+  - component: {fileID: -2501996176560400769}
   m_Layer: 10
   m_Name: 'L '
   m_TagString: Room
@@ -504,20 +504,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &303828247847310756
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8502480126173933744}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!114 &2875474042467200216
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -575,6 +561,19 @@ MonoBehaviour:
   m_VoxelSize: 0.16666667
   m_BuildHeightMesh: 0
   m_NavMeshData: {fileID: 0}
+--- !u!65 &-2501996176560400769
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8502480126173933744}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 10, y: 2.220446e-16, z: 10}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &8514657620350876463
 GameObject:
   m_ObjectHideFlags: 0

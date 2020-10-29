@@ -73,8 +73,8 @@ GameObject:
   - component: {fileID: 1607474536957170428}
   - component: {fileID: 2265391898507441827}
   - component: {fileID: 5504141262917576047}
-  - component: {fileID: 2584025643571099825}
   - component: {fileID: 4386259439441114990}
+  - component: {fileID: 4580054971282735488}
   m_Layer: 10
   m_Name: L_R
   m_TagString: Room
@@ -177,20 +177,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 3
---- !u!64 &2584025643571099825
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 954273318823005920}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!114 &4386259439441114990
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -220,6 +206,19 @@ MonoBehaviour:
   m_VoxelSize: 0.16666667
   m_BuildHeightMesh: 0
   m_NavMeshData: {fileID: 0}
+--- !u!65 &4580054971282735488
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 954273318823005920}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 10, y: 2.220446e-16, z: 10}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1453300908841569468
 GameObject:
   m_ObjectHideFlags: 0

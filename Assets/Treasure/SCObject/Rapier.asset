@@ -17,4 +17,4 @@ MonoBehaviour:
   playerHealthIncrease: 0
   playerDamageIncrease: 0
   playerMovementSpeedIncrease: 0
-  playerAttackSpeedIncrease: 4
+  playerAttackSpeedIncrease: 0.04
