@@ -16,5 +16,5 @@ MonoBehaviour:
   description: Swing swiftly! +Damage +Speed
   playerHealthIncrease: 0
   playerDamageIncrease: 1
-  playerMovementSpeedIncrease: 1
-  playerAttackSpeedIncrease: 0
+  playerMovementSpeedIncrease: 0
+  playerAttackSpeedIncrease: 0.01

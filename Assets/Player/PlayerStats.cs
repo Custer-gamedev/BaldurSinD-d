@@ -52,7 +52,8 @@ public class PlayerStats : MonoBehaviour
 			maxHealth += ot.health;
 			speed += ot.moveSpeed;
 			damage += ot.damage;
-			attackSpeed += ot.attackSpeed;
+			attackSpeed -= ot.attackSpeed;
+			GetComponentInChildren<Attack>().UpdateCooldownTime();
 			itemName.text = "You picked up " + ot.itemName;
 			itemDesc.text = ot.description;
 

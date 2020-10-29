@@ -29,7 +29,7 @@ public class Attack : MonoBehaviour
 	private void Start()
 	{
 		Player = this.gameObject;
-		CoolDownTime = Player.GetComponent<PlayerStats>().attackSpeed;
+		UpdateCooldownTime();
 	}
 
 	void Update()
@@ -121,4 +121,10 @@ public class Attack : MonoBehaviour
 		}
 		#endregion
 	}
+
+	public void UpdateCooldownTime()
+    {
+		CoolDownTime = Player.GetComponent<PlayerStats>().attackSpeed;
+	}
+
 }
