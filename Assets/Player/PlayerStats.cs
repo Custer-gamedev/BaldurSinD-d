@@ -39,7 +39,7 @@ public class PlayerStats : MonoBehaviour
 		healthTxt.text = "Health: " + health.ToString() + " / " + maxHealth.ToString();
 		speedTxt.text = "Speed: " + speed.ToString();
 		damageTxt.text = "Damage: " + damage.ToString();
-		attackSTxt.text = "AttackSpeed: " + (attackSpeed * 10f).ToString();
+	//	attackSTxt.text = "AttackSpeed: " + (attackSpeed * 10f).ToString();
 	}
 
 	public void OnTriggerEnter(Collider other)
