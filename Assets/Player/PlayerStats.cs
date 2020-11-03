@@ -64,3 +64,10 @@ public class PlayerStats : MonoBehaviour
 		}
 	}
 }
+
+public class DataToSave
+{
+
+	public int kills;
+	public int floorsCleared;
+}

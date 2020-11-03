@@ -11,6 +11,9 @@ public class PlayerMove : MonoBehaviour
 	public bool attacking;
 	public Transform body;
 	public Transform target;
+
+	public static bool allowedToMove = true;
+
 	PlayerStats playerStats;
 	Vector3 forward, right, moveDir;
 
@@ -24,7 +27,6 @@ public class PlayerMove : MonoBehaviour
 		right = Quaternion.Euler(new Vector3(0, 90, 0)) * forward;
 		body = this.transform;
 		pStats = GetComponent<PlayerStats>();
-
 	}
 	private void Update()
 	{
@@ -56,6 +58,9 @@ public class PlayerMove : MonoBehaviour
 	}
 	void Move()
 	{
+        if (allowedToMove)
+        {
+
 		moveDir = new Vector3(Input.GetAxis("HorizontalKey"), 0, Input.GetAxis("VerticalKey"));
 		Vector3 rightMove = right * moveSpeed * Time.deltaTime * Input.GetAxis("HorizontalKey");
 		Vector3 upMove = forward * moveSpeed * Time.deltaTime * Input.GetAxis("VerticalKey");
@@ -69,6 +74,7 @@ public class PlayerMove : MonoBehaviour
 		//BEVEGELSE
 		transform.position += rightMove;
 		transform.position += upMove;
+        }
 	}
 
 	//Gjør denne senere, men skal rotere langs musa

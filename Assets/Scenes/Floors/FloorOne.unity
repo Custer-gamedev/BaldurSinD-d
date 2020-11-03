@@ -1898,8 +1898,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 44daccaa8ec98f1429644d418934343e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  CoolDownTime: 0
-  AtkDelay: 0
+  coolDownTime: 0
+  attackDelay: 0
   BasicHitBox: {fileID: 8098824327079953731, guid: 58aa8c10113f6fa4b94a6a5250192ad3, type: 3}
   CD: {fileID: 125162749}
   Offset: {x: 0, y: 0, z: 0}
@@ -1909,10 +1909,10 @@ MonoBehaviour:
   CD2: {fileID: 334447707}
   AxeOnMap: {fileID: 1630082089}
   ATCK2canvas: {fileID: 730248232}
-  Offset2: {x: 0, y: 0, z: 0}
-  Charching: 1
-  GotAxe: 1
-  SpawnArrow: 1
+  offset2: {x: 0, y: 0, z: 0}
+  charging: 1
+  gotAxe: 1
+  spawnArrow: 1
   AtkDelay3: 0
   ThirdHitBox: {fileID: 5657782954409771214, guid: bb2aeeaa3498cd541a0d7b7eb1cd82f0, type: 3}
   CD3: {fileID: 39910236}
