@@ -6,15 +6,23 @@ using System.Configuration;
 
 public static class SaveData
 {
-    static string Path()
-    {
-        return Application.dataPath + "SavaData.json";
-    }
-    
-   public static void Save(DataToSave saveD)
-    {
-        var json = JsonUtility.ToJson(saveD);
-        File.WriteAllText(Path(), json);
-    }
-    
+	public static string Path()
+	{
+		return Application.dataPath + "/SavaData.json";
+	}
+
+	public static void Save(DataToSave saveData)
+	{
+		var json = JsonUtility.ToJson(saveData);
+		File.WriteAllText(Path(), json);
+	}
+
+	public static DataToSave Load()
+	{
+		var json = File.ReadAllText(Path());
+		DataToSave loadedData = JsonUtility.FromJson<DataToSave>(json);
+		return loadedData;
+	}
+
 }
+

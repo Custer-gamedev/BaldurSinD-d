@@ -42,7 +42,10 @@ public class EnemyStats : MonoBehaviour
 			if (isThisBoss == true)
 			{
 				Instantiate(nextFloor, gameObject.transform.position + (new Vector3(0, -1, 0)), transform.rotation);
+				p.GetBossKills(1);
 			}
+			else
+				p.GetNormalKills(1);
 
 		}
 	}

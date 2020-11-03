@@ -11,6 +11,7 @@ public class NextFloor : MonoBehaviour
 	{
 		if (other.tag == "Player")
 		{
+			other.GetComponent<PlayerStats>().GetFloorCleared(1);
 			SceneManager.LoadScene(floorToLoad);
 			other.transform.position = new Vector3(0, .5f, 0);
 		}

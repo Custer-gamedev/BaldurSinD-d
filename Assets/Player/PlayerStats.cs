@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using TMPro;
+using System.IO;
 using UnityEngine;
 
 public class PlayerStats : MonoBehaviour
@@ -9,15 +10,40 @@ public class PlayerStats : MonoBehaviour
 	public Animator canvasAnim;
 
 	public TextMeshProUGUI healthTxt, speedTxt, damageTxt, itemName, itemDesc, attackSTxt;
+	public DataToSave data;
 
 	void Awake()
 	{
+		if (File.Exists(SaveData.Path()))
+		{
+			data = SaveData.Load();
+			print("File exists");
+		}
+		else
+		{
+			print("File doesn't exist");
+		}
 		health = maxHealth;
 		UpdateUI();
 	}
 
-	private void Update()
+
+	public void GetNormalKills(int amount)
 	{
+		data.kills += amount;
+	}
+	public void GetBossKills(int amount)
+	{
+		data.bossesKilled += amount;
+	}
+	public void GetFloorCleared(int amount)
+	{
+		data.floorsCleared += amount;
+	}
+
+	private void OnApplicationQuit()
+	{
+		SaveData.Save(data);
 	}
 	public void TakeDamage(float amount)
 	{
@@ -39,7 +65,7 @@ public class PlayerStats : MonoBehaviour
 		healthTxt.text = "Health: " + health.ToString() + " / " + maxHealth.ToString();
 		speedTxt.text = "Speed: " + speed.ToString();
 		damageTxt.text = "Damage: " + damage.ToString();
-	//	attackSTxt.text = "AttackSpeed: " + (attackSpeed * 10f).ToString();
+		//	attackSTxt.text = "AttackSpeed: " + (attackSpeed * 10f).ToString();
 	}
 
 	public void OnTriggerEnter(Collider other)
@@ -56,7 +82,7 @@ public class PlayerStats : MonoBehaviour
 			GetComponentInChildren<Attack>().UpdateCooldownTime();
 			itemName.text = "You picked up " + ot.itemName;
 			itemDesc.text = ot.description;
-
+			data.treasuresPickedUp++;
 			canvasAnim.Play("FadeInOut");
 
 			Destroy(ot.gameObject, 3);
@@ -65,9 +91,12 @@ public class PlayerStats : MonoBehaviour
 	}
 }
 
+[System.Serializable]
 public class DataToSave
 {
 
 	public int kills;
 	public int floorsCleared;
+	public int treasuresPickedUp;
+	public int bossesKilled;
 }
