@@ -1,9 +1,13 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
+using UnityEngine.UI;
+
 
 public class PlayerMove : MonoBehaviour
 {
+	[Header("Body/Move")]
 	private float maxSpeed = 8f;
 	public float moveSpeed;
 	public PlayerStats pStats;
@@ -31,13 +35,13 @@ public class PlayerMove : MonoBehaviour
 	private void Update()
 	{
 
+
 		float moveFloatX = Input.GetAxisRaw("Horizontal");
 		float moveFloatY = Input.GetAxisRaw("Vertical");
 
 		//if (moveFloatX <= 0 || moveFloatX >= 0 || moveFloatY <= 0 || moveFloatY >= 0)
 		if (Input.anyKey)
 			Move();
-
 
 
 		moveSpeed = pStats.speed;
@@ -56,25 +60,26 @@ public class PlayerMove : MonoBehaviour
 			}
 		}
 	}
+
 	void Move()
 	{
-        if (allowedToMove)
-        {
+		if (allowedToMove)
+		{
 
-		moveDir = new Vector3(Input.GetAxis("HorizontalKey"), 0, Input.GetAxis("VerticalKey"));
-		Vector3 rightMove = right * moveSpeed * Time.deltaTime * Input.GetAxis("HorizontalKey");
-		Vector3 upMove = forward * moveSpeed * Time.deltaTime * Input.GetAxis("VerticalKey");
+			moveDir = new Vector3(Input.GetAxis("HorizontalKey"), 0, Input.GetAxis("VerticalKey"));
+			Vector3 rightMove = right * moveSpeed * Time.deltaTime * Input.GetAxis("HorizontalKey");
+			Vector3 upMove = forward * moveSpeed * Time.deltaTime * Input.GetAxis("VerticalKey");
 
-		moveDir = Vector3.Normalize(rightMove + upMove);
+			moveDir = Vector3.Normalize(rightMove + upMove);
 
-		if (moveDir == Vector3.zero)
-			return;
+			if (moveDir == Vector3.zero)
+				return;
 
-		transform.forward = moveDir;
-		//BEVEGELSE
-		transform.position += rightMove;
-		transform.position += upMove;
-        }
+			transform.forward = moveDir;
+			//BEVEGELSE
+			transform.position += rightMove;
+			transform.position += upMove;
+		}
 	}
 
 	//Gjør denne senere, men skal rotere langs musa
