@@ -104,7 +104,7 @@ Material:
     - _Metallic: 0
     - _Mode: 0
     - _OcclusionStrength: 1
-    - _OutlineThickness: 0.652
+    - _OutlineThickness: 0.634
     - _Parallax: 0.02
     - _QueueOffset: 0
     - _ReceiveShadows: 1
@@ -132,5 +132,5 @@ Material:
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
     - _SoftParticleFadeParams: {r: 0, g: 0, b: 0, a: 0}
     - _SpecColor: {r: 1, g: 1, b: 1, a: 1}
-    - _UnlitColor: {r: 0.39607847, g: 0.2901961, b: 0.12941177, a: 1}
+    - _UnlitColor: {r: 0.24528301, g: 0.15479799, b: 0.026610898, a: 1}
   m_BuildTextureStacks: []

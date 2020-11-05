@@ -48,7 +48,7 @@ public class Attack : MonoBehaviour
 				Attacking = true;
 				halfSpeed = Player.GetComponent<PlayerStats>().speed / 2;
 				Player.GetComponent<PlayerStats>().speed = halfSpeed;
-				Instantiate(BasicHitBox, (transform.position + Offset) + transform.forward, Quaternion.Euler(0, 0, 0), this.transform);
+				Instantiate(BasicHitBox, Offset /* transform.forward*/, Quaternion.Euler(0, 0, 0), this.transform);
 				CD.SetActive(true);
 				attackDelay = coolDownTime;
 			}
@@ -123,7 +123,7 @@ public class Attack : MonoBehaviour
 	}
 
 	public void UpdateCooldownTime()
-    {
+	{
 		coolDownTime = Player.GetComponent<PlayerStats>().attackSpeed;
 	}
 
