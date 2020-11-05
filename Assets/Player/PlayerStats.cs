@@ -27,7 +27,7 @@ public class PlayerStats : MonoBehaviour
 		UpdateUI();
 	}
 
-
+	#region SaveData
 	public void GetNormalKills(int amount)
 	{
 		data.kills += amount;
@@ -45,11 +45,11 @@ public class PlayerStats : MonoBehaviour
 	{
 		SaveData.Save(data);
 	}
+	#endregion
 	public void TakeDamage(float amount)
 	{
 		health -= amount;
 		healthTxt.text = "Health: " + health.ToString() + " / " + maxHealth.ToString();
-
 	}
 
 	public void Heal(float amount)
@@ -57,7 +57,6 @@ public class PlayerStats : MonoBehaviour
 		health = Mathf.Clamp(health, 0, maxHealth - .5f);
 		health += amount;
 		healthTxt.text = "Health: " + health.ToString() + " / " + maxHealth.ToString();
-
 	}
 
 	public void UpdateUI()
@@ -65,7 +64,7 @@ public class PlayerStats : MonoBehaviour
 		healthTxt.text = "Health: " + health.ToString() + " / " + maxHealth.ToString();
 		speedTxt.text = "Speed: " + speed.ToString();
 		damageTxt.text = "Damage: " + damage.ToString();
-		//	attackSTxt.text = "AttackSpeed: " + (attackSpeed * 10f).ToString();
+		attackSTxt.text = "AttackSpeed: " + (attackSpeed * 10f).ToString();
 	}
 
 	public void OnTriggerEnter(Collider other)
