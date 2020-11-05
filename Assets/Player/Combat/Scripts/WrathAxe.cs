@@ -61,8 +61,8 @@ public class WrathAxe : MonoBehaviour
 				if (!Thrown)
 				{
 					other.GetComponent<Attack>().CD2.SetActive(true);
-					other.GetComponent<Attack>().GotAxe = true;
-					other.GetComponent<Attack>().SpawnArrow = true;
+					other.GetComponent<Attack>().gotAxe = true;
+					other.GetComponent<Attack>().spawnArrow = true;
 					Destroy(this.gameObject);
 				}
 				break;
