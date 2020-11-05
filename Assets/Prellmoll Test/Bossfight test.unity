@@ -2875,7 +2875,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5561026756584560312, guid: 35d14b533dea0b548a964060e9c72e7d, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 9
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 5561026756584560312, guid: 35d14b533dea0b548a964060e9c72e7d, type: 3}
       propertyPath: m_LocalPosition.y
@@ -2883,7 +2883,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5561026756584560312, guid: 35d14b533dea0b548a964060e9c72e7d, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 15
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 5561026756584560312, guid: 35d14b533dea0b548a964060e9c72e7d, type: 3}
       propertyPath: m_LocalRotation.x
@@ -2953,13 +2953,15 @@ MonoBehaviour:
   player: {fileID: 184306706}
   chargeTime: 0.1
   chargeTimeBigAttack: 0
-  firerate: 0
+  firerate: 5
   lastfired: 0
   bigAtkTurnSpeed: 30
   startedTurning: 0
   currentFacing: {x: 0, y: 0, z: 0}
+  fullRotation: {x: 0, y: 0, z: 0}
+  rotCompleted: {x: 0, y: 0, z: 0}
   hasMoved: 0
-  timeToSpin: 0
+  Spinning: 0
 --- !u!195 &8694546398510160887
 NavMeshAgent:
   m_ObjectHideFlags: 0
