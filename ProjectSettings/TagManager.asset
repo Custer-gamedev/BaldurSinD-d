@@ -24,6 +24,7 @@ TagManager:
   - Door
   - Wall
   - M_Node
+  - M_Node_Centre
   layers:
   - Default
   - TransparentFX

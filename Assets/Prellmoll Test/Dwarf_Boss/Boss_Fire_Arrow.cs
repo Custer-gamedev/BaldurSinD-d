@@ -16,7 +16,7 @@ public class Boss_Fire_Arrow : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //gameObject.transform.rotation = bossRot.transform.rotation;
-        gameObject.transform.position = gameObject.transform.position +gameObject.transform.forward * muzzleVelocity *  Time.deltaTime;
+        
+        gameObject.transform.position = gameObject.transform.position + gameObject.transform.forward * muzzleVelocity *  Time.deltaTime;
     }
 }
