@@ -13,32 +13,50 @@ public class Boss_Dwarf_Controller : MonoBehaviour
     public GameObject dest1, dest2, dest3, dest4, dest5, arrow, muzzle, p2MuzzleL, p2MuzzleR, player;
     bool moving, attacking;
     int destNode, hasMovedCount;
-    public float chargeTime, chargeTimeBigAttack, firerate, lastfired;
-    public Vector3 currentFacing;
+    public float chargeTime, chargeTimeBigAttack, firerate, lastfired, bigAtkTurnSpeed, startedTurning;
+    
+    float startAngle, targetAngle;
+    public Vector3 currentFacing, fullRotation, rotCompleted;
     bool lookAtPlayer;
+    public bool hasMoved, Spinning;
     Vector3 curPos;
+
     
 
     void Start()
     {
+        fullRotation = new Vector3(0, 359, 0);
         moving = false;
         attacking = false;
+        rotCompleted = new Vector3(0, 345, 0);
     }
     void Update()
-    {
-
+    {  
+        print(Spinning);
+        if (Spinning)
+        {
+            if (Time.time - lastfired > 1 / firerate)
+            {
+                lastfired = Time.time;
+                Instantiate(arrow, transform.position, transform.rotation);
+            }
+        }
+        if (Input.GetKeyDown(KeyCode.O)){
+            BigAttack();
+        }
         if(Input.GetKeyDown(KeyCode.P)){
-            MovetoNextPoint();
             destNode++;
+            MovetoNextPoint();
         }
         if (lookAtPlayer == true)
         {
-            print (lookAtPlayer);
+            //print (lookAtPlayer);
             Vector3 lookVector = player.transform.position - transform.position;
             lookVector.y = transform.position.y;
             Quaternion rot = Quaternion.LookRotation(lookVector);
             transform.rotation = Quaternion.Slerp(transform.rotation, rot, 1);
         }
+       
     }
     private void OnTriggerEnter(Collider other) 
     {
@@ -68,12 +86,8 @@ public class Boss_Dwarf_Controller : MonoBehaviour
             break;
             case 4: 
             agent.SetDestination(dest4.transform.position);
-            break;
-            default:
-            MovetoNextPoint();
-            break;   
+            break;  
         }
-        hasMovedCount++;
     }
     private IEnumerator Chargeattack()
     {
@@ -81,27 +95,41 @@ public class Boss_Dwarf_Controller : MonoBehaviour
         lookAtPlayer = true;
         yield return new WaitForSeconds(chargeTime);
         Attack();
-        if(hasMovedCount < 4){
-
         var lastPos = destNode;
         destNode = Random.Range(1, 5);
-        if(destNode == lastPos){
-            print("Lastpos" + lastPos + " Destnode "+ destNode);
-            destNode = Random.Range(1, 5);
+            while(destNode == lastPos){
+                destNode = Random.Range(1, 5);
+                print ("WhileStarted");
+                if(lastPos != destNode){
+                    MovetoNextPoint();
+                    print ("WhileStopping");
+                }
+            }
+            //print("Lastpos" + lastPos + " Destnode "+ destNode);
+        if (destNode != lastPos){
+            MovetoNextPoint();
         }
-        MovetoNextPoint();
-        }
-        if(hasMovedCount > 4){
-            print("BigAttackTime");
-            agent.SetDestination(dest5.transform.position);
-        }
+       
         
+    }
+    IEnumerator Rotate(float duration)
+    {
+        float startRotation = transform.eulerAngles.y;
+        float endRotation = startRotation + 360.0f;
+        float t = 0.0f;
+        while ( t  < duration )
+        {
+            Spinning = true;
+            t += Time.deltaTime;
+            float yRotation = Mathf.Lerp(startRotation, endRotation, t / duration) % 360.0f;
+            transform.eulerAngles = new Vector3(transform.eulerAngles.x, yRotation, transform.eulerAngles.z);
+            yield return null;
+        }
+        Spinning = false;
     }
     private IEnumerator BigCharge(){
         yield return new WaitForSeconds(chargeTimeBigAttack);
-        
         hasMovedCount = 0;
-        
     }
     void Attack()
     {
@@ -118,6 +146,10 @@ public class Boss_Dwarf_Controller : MonoBehaviour
     }
     void BigAttack()
     {
+        startedTurning = Time.time;
+        Spinning = true;
+        StartCoroutine(Rotate(3f));
         
+
     }
 }
