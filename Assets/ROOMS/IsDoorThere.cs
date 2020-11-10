@@ -24,7 +24,7 @@ public class IsDoorThere : MonoBehaviour
 		{
 			if (IsCollding() == false)
 			{
-				Destroy(transform.parent.gameObject);
+				Destroy(transform.parent.gameObject.transform.parent.gameObject);
 
 			}
 			else if (IsCollding() == true)
