@@ -16,7 +16,7 @@ public class Boss_Dwarf_Controller : MonoBehaviour
     public float chargeTime, chargeTimeBigAttack, firerate, lastfired, bigAtkTurnSpeed, startedTurning;
     
     float startAngle, targetAngle;
-    public Vector3 currentFacing, fullRotation, rotCompleted;
+    public Vector3 currentFacing;
     bool lookAtPlayer;
     public bool hasMoved, Spinning;
     Vector3 curPos;
@@ -25,10 +25,8 @@ public class Boss_Dwarf_Controller : MonoBehaviour
 
     void Start()
     {
-        fullRotation = new Vector3(0, 359, 0);
-        moving = false;
-        attacking = false;
-        rotCompleted = new Vector3(0, 345, 0);
+        destNode++;
+        MovetoNextPoint();
     }
     void Update()
     {  
@@ -52,7 +50,7 @@ public class Boss_Dwarf_Controller : MonoBehaviour
         {
             //print (lookAtPlayer);
             Vector3 lookVector = player.transform.position - transform.position;
-            lookVector.y = transform.position.y;
+            lookVector.y = transform.rotation.y;
             Quaternion rot = Quaternion.LookRotation(lookVector);
             transform.rotation = Quaternion.Slerp(transform.rotation, rot, 1);
         }
@@ -63,9 +61,11 @@ public class Boss_Dwarf_Controller : MonoBehaviour
         if(other.gameObject.tag == "M_Node"){
             print("Collided");
             StartCoroutine("Chargeattack");
+            hasMovedCount++;
+           
         }   
-        if (other.gameObject.tag == "M_Node_Centre"){
-            
+        if (other.gameObject.tag == "M_Node_Centre" && hasMovedCount >= 6){
+            StartCoroutine(BigCharge());
         } 
     }
     void MovetoNextPoint()
@@ -97,6 +97,7 @@ public class Boss_Dwarf_Controller : MonoBehaviour
         Attack();
         var lastPos = destNode;
         destNode = Random.Range(1, 5);
+        if(hasMovedCount < 6){
             while(destNode == lastPos){
                 destNode = Random.Range(1, 5);
                 print ("WhileStarted");
@@ -109,7 +110,13 @@ public class Boss_Dwarf_Controller : MonoBehaviour
         if (destNode != lastPos){
             MovetoNextPoint();
         }
+        }
        
+          if(hasMovedCount >= 6)
+        {
+            agent.SetDestination(dest5.transform.position);
+        }
+        
         
     }
     IEnumerator Rotate(float duration)
@@ -126,9 +133,11 @@ public class Boss_Dwarf_Controller : MonoBehaviour
             yield return null;
         }
         Spinning = false;
+        MovetoNextPoint();
     }
     private IEnumerator BigCharge(){
         yield return new WaitForSeconds(chargeTimeBigAttack);
+        BigAttack();
         hasMovedCount = 0;
     }
     void Attack()
