@@ -18,6 +18,7 @@ public class Room : MonoBehaviour
 
 	public bool bossSpawn, treasureSpawn;
 	GameObject bossRoom;
+	public GameObject bossPlatform;
 	GameObject treasureRoom;
 	public Transform bossSpawnPoint, treasureSpawnPoint;
 
@@ -30,12 +31,17 @@ public class Room : MonoBehaviour
 			{
 				if (i == roomsList.Count - 1)
 				{
-					Transform b = Instantiate(bossSpawnPoint, roomsList[i].transform.position, Quaternion.identity);
+					/*Transform b = Instantiate(bossSpawnPoint, roomsList[i].transform.position, Quaternion.identity);
 					b.transform.parent = roomsList[i].transform;
 					Vector3 middlePos = roomsList[i].GetComponent<Collider>().bounds.center;
 					b.transform.position = new Vector3(middlePos.x, middlePos.y + 1.5f, middlePos.z);
 					roomsList[i].gameObject.transform.name = "Boss Room";
 					bossRoom = roomsList[i].gameObject;
+					bossRoom.tag = "BossRoom";
+					bossSpawn = true; */
+
+					bossRoom = Instantiate(bossPlatform, roomsList[i].gameObject.transform.position, roomsList[i].gameObject.transform.rotation);
+					Destroy(roomsList[i].gameObject);
 					bossRoom.tag = "BossRoom";
 					bossSpawn = true;
 				}
