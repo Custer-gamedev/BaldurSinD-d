@@ -146,6 +146,38 @@ PrefabInstance:
       propertyPath: m_LocalPosition.y
       value: -0.01
       objectReference: {fileID: 0}
+    - target: {fileID: 2775458087127678666, guid: 35d14b533dea0b548a964060e9c72e7d, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2775458087127678666, guid: 35d14b533dea0b548a964060e9c72e7d, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2775458087127678666, guid: 35d14b533dea0b548a964060e9c72e7d, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2775458087127678666, guid: 35d14b533dea0b548a964060e9c72e7d, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2775458087127678666, guid: 35d14b533dea0b548a964060e9c72e7d, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 15.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 2775458087127678666, guid: 35d14b533dea0b548a964060e9c72e7d, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -1.9
+      objectReference: {fileID: 0}
+    - target: {fileID: 2775458087127678666, guid: 35d14b533dea0b548a964060e9c72e7d, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2775458087127678666, guid: 35d14b533dea0b548a964060e9c72e7d, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3743610214886064509, guid: 35d14b533dea0b548a964060e9c72e7d, type: 3}
       propertyPath: m_LocalPosition.y
       value: 3.96
@@ -212,6 +244,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 35d14b533dea0b548a964060e9c72e7d, type: 3}
+--- !u!1 &393083638 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1403172612559471331, guid: 35d14b533dea0b548a964060e9c72e7d, type: 3}
+  m_PrefabInstance: {fileID: 367382635}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &523963611
 GameObject:
   m_ObjectHideFlags: 0
@@ -710,6 +747,7 @@ MonoBehaviour:
   muzzle: {fileID: 2000411481}
   p2MuzzleL: {fileID: 756133465}
   p2MuzzleR: {fileID: 558419722}
+  p2spinMuzzle: {fileID: 393083638}
   player: {fileID: 523963611}
   chargeTime: 0.5
   chargeTimeBigAttack: 0.5
@@ -748,7 +786,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 090858526535fa34fa5ac28fc3f101ce, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  phase2: 0
+  phase2: 1
 --- !u!1 &849745461
 GameObject:
   m_ObjectHideFlags: 0

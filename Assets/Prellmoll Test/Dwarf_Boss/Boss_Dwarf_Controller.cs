@@ -10,7 +10,7 @@ using UnityEngine.AI;
 public class Boss_Dwarf_Controller : MonoBehaviour
 {
     public NavMeshAgent agent;
-    public GameObject dest1, dest2, dest3, dest4, dest5, arrow, muzzle, p2MuzzleL, p2MuzzleR, player;
+    public GameObject dest1, dest2, dest3, dest4, dest5, arrow, muzzle, p2MuzzleL, p2MuzzleR, p2spinMuzzle, player;
     bool moving, attacking;
     int destNode, hasMovedCount;
     public float chargeTime, chargeTimeBigAttack, firerate, lastfired, bigAtkTurnSpeed, startedTurning;
@@ -30,13 +30,17 @@ public class Boss_Dwarf_Controller : MonoBehaviour
     }
     void Update()
     {  
+        var backwards = gameObject.transform.rotation.eulerAngles + new Vector3(0, -180, 0);
         print(Spinning);
         if (Spinning)
         {
             if (Time.time - lastfired > 1 / firerate)
             {
                 lastfired = Time.time;
-                Instantiate(arrow, transform.position, transform.rotation);
+                Instantiate(arrow, muzzle.transform.position, transform.rotation);
+                if(gameObject.GetComponent<Boss_Dwarf_Stats>().phase2 == true){
+                    Instantiate(arrow, p2spinMuzzle.transform.position, Quaternion.Euler(backwards));
+                }
             }
         }
         if (Input.GetKeyDown(KeyCode.O)){

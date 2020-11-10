@@ -10,7 +10,7 @@ public class Boss_Fire_Arrow : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        Destroy(gameObject, 6);
     }
 
     // Update is called once per frame
@@ -19,4 +19,5 @@ public class Boss_Fire_Arrow : MonoBehaviour
         
         gameObject.transform.position = gameObject.transform.position + gameObject.transform.forward * muzzleVelocity *  Time.deltaTime;
     }
+    
 }
