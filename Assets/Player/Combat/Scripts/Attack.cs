@@ -41,7 +41,7 @@ public class Attack : MonoBehaviour
 			CD.SetActive(false);
 		}
 		CD.GetComponentInChildren<Text>().text = (attackDelay * 10).ToString();
-		if (Input.GetButton("Fire1") && GameObject.FindGameObjectWithTag("ATCK") == null && GameObject.FindGameObjectWithTag("ATCK3") == null && GameObject.Find("arrow(Clone)") == null)
+		if (Input.GetButton("Fire1") && GameObject.FindGameObjectWithTag("ATCK") == null && GameObject.FindGameObjectWithTag("ATCK3") == null && GameObject.Find("arrow(Clone)") == null && PlayerMove.allowedToMove == true)
 		{
 			if (attackDelay <= 0)
 			{
@@ -71,7 +71,7 @@ public class Attack : MonoBehaviour
 			CD2.GetComponentInChildren<Text>().text = (AtkDelay2 * 10).ToString();
 
 			//creates indicator
-			if (Input.GetButton("Fire2") && AtkDelay2 <= 0 && GameObject.FindGameObjectWithTag("ATCK") == null && GameObject.FindGameObjectWithTag("ATCK3") == null)
+			if (Input.GetButton("Fire2") && AtkDelay2 <= 0 && GameObject.FindGameObjectWithTag("ATCK") == null && GameObject.FindGameObjectWithTag("ATCK3") == null && PlayerMove.allowedToMove == true)
 			{
 				Attacking = true;
 				ATCK2canvas = GameObject.FindGameObjectWithTag("ATCK2canvas");
@@ -84,7 +84,7 @@ public class Attack : MonoBehaviour
 			}
 
 			//creates throwing axe
-			if (Input.GetButtonUp("Fire2"))
+			if (Input.GetButtonUp("Fire2") && PlayerMove.allowedToMove == true)
 			{
 				if (AtkDelay2 <= 0 && GameObject.FindGameObjectWithTag("ATCK") == null && GameObject.FindGameObjectWithTag("ATCK3") == null)
 				{
@@ -108,7 +108,7 @@ public class Attack : MonoBehaviour
 			CD3.SetActive(false);
 		}
 		CD3.GetComponentInChildren<Text>().text = (AtkDelay3 * 10).ToString();
-		if (Input.GetButtonDown("Fire3") && GameObject.FindGameObjectWithTag("ATCK") == null && GameObject.FindGameObjectWithTag("ATCK3") == null && GameObject.Find("arrow(Clone)") == null)
+		if (Input.GetButtonDown("Fire3") && GameObject.FindGameObjectWithTag("ATCK") == null && GameObject.FindGameObjectWithTag("ATCK3") == null && GameObject.Find("arrow(Clone)") == null && PlayerMove.allowedToMove == true)
 		{
 			if (AtkDelay3 <= 0)
 			{
