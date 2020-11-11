@@ -243,7 +243,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 5.3, y: 0.000002861}
+  m_AnchoredPosition: {x: -168.5, y: 204}
   m_SizeDelta: {x: 274.07507, y: 51.389076}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!111 &37217307
@@ -1486,11 +1486,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   videoPlayer: {fileID: 0}
-  stuffToEnable:
-  - {fileID: 730248232}
-  - {fileID: 1102582945}
-  - {fileID: 201835238}
-  - {fileID: 1793843052}
+  stuffToEnable: []
   textAnim: {fileID: 37217307}
   waitTime: 6
   cutsceneLength: 31

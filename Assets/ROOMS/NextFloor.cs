@@ -13,7 +13,7 @@ public class NextFloor : MonoBehaviour
 		{
 			other.GetComponent<PlayerStats>().GetFloorCleared(1);
 			SceneManager.LoadScene(floorToLoad);
-			other.transform.position = new Vector3(0, .5f, 0);
+			other.transform.position = new Vector3(0, 1f, 0);
 		}
 	}
 }
