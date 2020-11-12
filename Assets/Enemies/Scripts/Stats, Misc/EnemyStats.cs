@@ -41,7 +41,7 @@ public class EnemyStats : MonoBehaviour
 
 			if (isThisBoss == true)
 			{
-				Instantiate(nextFloor, gameObject.transform.position + (new Vector3(0, 1, 0)), this.transform.rotation);
+				nextFloor.SetActive(true);
 				p.GetBossKills(1);
 			}
 			else

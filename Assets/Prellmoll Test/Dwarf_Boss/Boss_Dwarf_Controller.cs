@@ -95,8 +95,11 @@ public class Boss_Dwarf_Controller : MonoBehaviour
 	}
 	private IEnumerator Chargeattack()
 	{
-		print("chargingAttack");
 		lookAtPlayer = true;
+		yield return new WaitForSeconds(.1f);
+		lookAtPlayer = false;
+
+		print("chargingAttack");
 		yield return new WaitForSeconds(chargeTime);
 		Attack();
 		var lastPos = destNode;
@@ -107,6 +110,7 @@ public class Boss_Dwarf_Controller : MonoBehaviour
 			print("WhileStarted");
 			if (lastPos != destNode)
 			{
+				yield return new WaitForSeconds(2f);
 				MovetoNextPoint();
 				print("WhileStopping");
 			}
