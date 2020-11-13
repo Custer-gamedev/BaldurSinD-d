@@ -14,16 +14,25 @@ public class Jotne : MonoBehaviour
 	//En pause mellom attacks, sånn at spiller kan angripe
 	// Lite HP, men mye Damage
 
-	private bool canAttack;
+	private bool canAttack = true;
 	public STATES state;
 	public Transform player;
-	public float projectileSpeed, moveSpeed, chaseSize;
+	public Animator jotneAnim;
+	public float projectileSpeed, chaseSize, spinningSpeed, damageSize;
 	public LayerMask playerMask;
 	private NavMeshAgent navM;
 	public GameObject rock;
+	float shootWait, stompWait;
+	float coolDownTime = 2;
+	float stompCoolDown = 3f;
 	private void Start()
 	{
 		navM = GetComponent<NavMeshAgent>();
+		jotneAnim = GetComponent<Animator>();
+		player = GameObject.FindGameObjectWithTag("Player").transform;
+		shootWait = coolDownTime;
+		stompWait = coolDownTime;
+		StartCoroutine(ChangeState());
 	}
 	void Update()
 	{
@@ -33,11 +42,13 @@ public class Jotne : MonoBehaviour
 				ChaseAttack();
 				break;
 			case STATES.ThrowAttack:
-				Invoke("ThrowAttack", 1);
+				ThrowAttack();
 				break;
 			case STATES.Idle:
+				Idle();
 				break;
 			case STATES.SpinAttack:
+				SpinAttack();
 				break;
 
 		}
@@ -46,45 +57,86 @@ public class Jotne : MonoBehaviour
 
 	void SpinAttack()
 	{
-		transform.Rotate(new Vector3(30, 0, 0) * Time.deltaTime);
+		//spin animasjon
+		transform.Rotate(new Vector3(0, 10, 0) * spinningSpeed * Time.deltaTime);
+		navM.SetDestination(player.transform.position);
+		navM.speed = .5f;
 	}
 
 	void ChaseAttack()
 	{
+		//run animasjon
 		navM.SetDestination(player.transform.position);
+		navM.speed = 4f;
 		if (Physics.CheckSphere(transform.position, chaseSize, playerMask))
 		{
-			//camerashake
-			//slam
+			//slam animasjon
+			navM.isStopped = true;
+			if (stompWait <= 0)
+			{
+				print("player took damage");
+
+				stompWait = stompCoolDown;
+
+			}
+			else
+				stompWait -= Time.deltaTime;
+
 		}
+		else
+			navM.isStopped = false;
 	}
-	void ThrowAttack()
+	public void ThrowAttack()
 	{
-		GameObject projectile = Instantiate(rock, transform.position, transform.rotation);
-		projectile.GetComponent<Rigidbody>().AddForce(player.transform.position * projectileSpeed * Time.deltaTime, ForceMode.Impulse);
+		//pickup and throw animasjon
+		navM.isStopped = true;
+		if (shootWait <= 0)
+		{
+			GameObject projectile = Instantiate(rock, transform.position, transform.rotation);
+			projectile.GetComponent<Rigidbody>().AddForce(player.transform.position * projectileSpeed * Time.deltaTime, ForceMode.Impulse);
+			Destroy(projectile, 3f);
+			shootWait = coolDownTime;
+		}
+
 	}
 	void Idle()
 	{
-		//go to middle of room and idle
+		//kneel animasjon
+		navM.isStopped = true;
 	}
 	public IEnumerator ChangeState()
 	{
 		while (canAttack == true)
 		{
 			state = STATES.Chase;
-			yield return new WaitForSeconds(5f);
+			yield return new WaitForSeconds(10f);
 			state = STATES.Idle;
 			yield return new WaitForSeconds(2f);
+			shootWait = coolDownTime;
 			state = STATES.ThrowAttack;
 			yield return new WaitForSeconds(3f);
 			state = STATES.SpinAttack;
-			yield return new WaitForSeconds(3.5f);
+			yield return new WaitForSeconds(6f);
 			state = STATES.Idle;
 			yield return new WaitForSeconds(6f);
 
 		}
 
 		yield return null;
+	}
+
+	private void OnDrawGizmos()
+	{
+		Gizmos.DrawWireSphere(transform.position, chaseSize);
+		Gizmos.DrawWireSphere(transform.position, damageSize);
+	}
+
+	private void OnCollisionEnter(Collision other)
+	{
+		if (other.transform.tag == "Player")
+		{
+			player.GetComponent<PlayerStats>().TakeDamage(1);
+		}
 	}
 }
 
