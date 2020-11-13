@@ -16,19 +16,22 @@ public class Jotne : MonoBehaviour
 
 	private bool canAttack = true;
 	public STATES state;
+	public Transform spawner;
 	public Transform player;
 	public Animator jotneAnim;
-	public float projectileSpeed, chaseSize, spinningSpeed, damageSize;
+	public float projectileSpeed, chaseSize, spinningSpeed;
 	public LayerMask playerMask;
 	private NavMeshAgent navM;
-	public GameObject rock;
+	public GameObject iceTaps;
 	float shootWait, stompWait;
-	float coolDownTime = 2;
+	bool spinny;
+	float coolDownTime = .1f;
 	float stompCoolDown = 3f;
 	private void Start()
 	{
 		navM = GetComponent<NavMeshAgent>();
-		jotneAnim = GetComponent<Animator>();
+		spawner = GameObject.FindGameObjectWithTag("IceTapSpawner").transform;
+		jotneAnim = GetComponentInChildren<Animator>();
 		player = GameObject.FindGameObjectWithTag("Player").transform;
 		shootWait = coolDownTime;
 		stompWait = coolDownTime;
@@ -50,58 +53,68 @@ public class Jotne : MonoBehaviour
 			case STATES.SpinAttack:
 				SpinAttack();
 				break;
-
 		}
-
 	}
 
 	void SpinAttack()
 	{
-		//spin animasjon
+		jotneAnim.Play("SpinnyBoy");
 		transform.Rotate(new Vector3(0, 10, 0) * spinningSpeed * Time.deltaTime);
 		navM.SetDestination(player.transform.position);
-		navM.speed = .5f;
+		navM.speed = 20f;
+		spinny = true;
 	}
 
 	void ChaseAttack()
 	{
-		//run animasjon
 		navM.SetDestination(player.transform.position);
-		navM.speed = 4f;
+		navM.speed = 7f;
 		if (Physics.CheckSphere(transform.position, chaseSize, playerMask))
 		{
-			//slam animasjon
 			navM.isStopped = true;
 			if (stompWait <= 0)
 			{
+				jotneAnim.Play("Slam");
 				print("player took damage");
-
+				player.GetComponent<PlayerStats>().TakeDamage(1);
 				stompWait = stompCoolDown;
-
 			}
 			else
+			{
 				stompWait -= Time.deltaTime;
+			}
 
 		}
 		else
+		{
+			jotneAnim.Play("Walk");
+
 			navM.isStopped = false;
+		}
 	}
 	public void ThrowAttack()
 	{
-		//pickup and throw animasjon
+		jotneAnim.Play("RockThrow");
+
 		navM.isStopped = true;
 		if (shootWait <= 0)
 		{
-			GameObject projectile = Instantiate(rock, transform.position, transform.rotation);
+			Vector3 spawnPos = new Vector3(Random.Range(-9f, 9f), 0, Random.Range(-10f, 10f));
+			spawnPos = spawner.TransformPoint(spawnPos * .5f);
+			Instantiate(iceTaps, spawnPos, transform.rotation);
+			/*GameObject projectile = Instantiate(rock, transform.position, transform.rotation);
 			projectile.GetComponent<Rigidbody>().AddForce(player.transform.position * projectileSpeed * Time.deltaTime, ForceMode.Impulse);
 			Destroy(projectile, 3f);
+			shootWait = coolDownTime; */
 			shootWait = coolDownTime;
 		}
+		else
+			shootWait -= Time.deltaTime;
 
 	}
 	void Idle()
 	{
-		//kneel animasjon
+		jotneAnim.Play("Idle");
 		navM.isStopped = true;
 	}
 	public IEnumerator ChangeState()
@@ -109,16 +122,18 @@ public class Jotne : MonoBehaviour
 		while (canAttack == true)
 		{
 			state = STATES.Chase;
-			yield return new WaitForSeconds(10f);
+			yield return new WaitForSeconds(9f);
 			state = STATES.Idle;
-			yield return new WaitForSeconds(2f);
+			yield return new WaitForSeconds(7f);
 			shootWait = coolDownTime;
 			state = STATES.ThrowAttack;
-			yield return new WaitForSeconds(3f);
+			yield return new WaitForSeconds(4f);
 			state = STATES.SpinAttack;
-			yield return new WaitForSeconds(6f);
+			yield return new WaitForSeconds(7f);
+			spinny = false;
 			state = STATES.Idle;
-			yield return new WaitForSeconds(6f);
+			yield return new WaitForSeconds(7f);
+
 
 		}
 
@@ -128,14 +143,22 @@ public class Jotne : MonoBehaviour
 	private void OnDrawGizmos()
 	{
 		Gizmos.DrawWireSphere(transform.position, chaseSize);
-		Gizmos.DrawWireSphere(transform.position, damageSize);
 	}
 
 	private void OnCollisionEnter(Collision other)
 	{
 		if (other.transform.tag == "Player")
 		{
-			player.GetComponent<PlayerStats>().TakeDamage(1);
+			player.GetComponent<PlayerStats>().TakeDamage(2);
+		}
+	}
+
+	private void OnTriggerEnter(Collider other)
+	{
+		if (other.tag == "Player" && spinny == true)
+		{
+			player.GetComponent<PlayerStats>().TakeDamage(2);
+
 		}
 	}
 }

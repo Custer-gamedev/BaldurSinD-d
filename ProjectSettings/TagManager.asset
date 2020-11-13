@@ -25,6 +25,7 @@ TagManager:
   - Wall
   - M_Node
   - M_Node_Centre
+  - IceTapSpawner
   layers:
   - Default
   - TransparentFX

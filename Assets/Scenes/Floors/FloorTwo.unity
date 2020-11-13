@@ -460,7 +460,7 @@ MonoBehaviour:
   surfaces: []
   bossSpawn: 0
   treasureSpawn: 0
-  bossPlatform: {fileID: 77098285788994504, guid: b54da66e43a2d644184615489c8f72d2, type: 3}
+  bossPlatform: {fileID: 4103798902586620223, guid: 2c6ea7e80dd418249b006a2d6346768d, type: 3}
   bossSpawnPoint: {fileID: 461469688200320970, guid: 250e8ef69558f18408bcb452d5e957fa, type: 3}
   treasureSpawnPoint: {fileID: 6195839979052568170, guid: 0be088fc6636efb4db51e77ea06c8147, type: 3}
 --- !u!4 &274421532

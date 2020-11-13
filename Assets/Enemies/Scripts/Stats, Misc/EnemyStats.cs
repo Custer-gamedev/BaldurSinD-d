@@ -20,8 +20,6 @@ public class EnemyStats : MonoBehaviour
 	void Awake()
 	{
 		enemiesList = GameObject.FindGameObjectWithTag("GameController").GetComponent<EnemiesList>();
-
-		thisColor = GetComponent<Renderer>().material.color;
 		PlayerStats p = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerStats>();
 	}
 	void Update()
@@ -60,7 +58,7 @@ public class EnemyStats : MonoBehaviour
 				print(p.damage);
 				break;
 			case "ATCK2":
-				StartCoroutine(TakeDamage(p.damage / 2));
+				StartCoroutine(TakeDamage(p.damage));
 				print(p.damage / 2);
 				break;
 			case "ATCK3":
@@ -71,8 +69,6 @@ public class EnemyStats : MonoBehaviour
 	public IEnumerator TakeDamage(float amount)
 	{
 		hp -= amount;
-		GetComponent<Renderer>().material.color = Color.red;
 		yield return new WaitForSeconds(.3f);
-		GetComponent<Renderer>().material.color = thisColor;
 	}
 }
