@@ -17,5 +17,10 @@ public class Ranged_Damage : MonoBehaviour
 			other.GetComponent<PlayerStats>().TakeDamage(damage);
 			Destroy(this.gameObject);
 		}
+		if (other.tag == "Room")
+		{
+			Destroy(this.gameObject);
+
+		}
 	}
 }
