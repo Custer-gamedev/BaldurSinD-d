@@ -21,19 +21,23 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Metal
-  m_Shader: {fileID: 4800000, guid: 4958959d2b077b64b8401784ff4046c2, type: 3}
+  m_Shader: {fileID: 4800000, guid: d440afcc94ab2e043b52f94e5d6afd0b, type: 3}
   m_ShaderKeywords: _GLOSSINESS_FROM_BASE_ALPHA _NORMALMAP _SPECULARHIGHLIGHTS_OFF
     _SPECULAR_COLOR
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
-  m_CustomRenderQueue: 2000
+  m_CustomRenderQueue: -1
   stringTagMap: {}
   disabledShaderPasses: []
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs:
     - _BaseMap:
+        m_Texture: {fileID: 2800000, guid: 65040752bf01ab24cadc8d560448c129, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _BaseTextur:
         m_Texture: {fileID: 2800000, guid: 65040752bf01ab24cadc8d560448c129, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
@@ -65,6 +69,10 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    - _NormalMap:
+        m_Texture: {fileID: 2800000, guid: 0f6c72657594ff14fb78a44a0a5d5593, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - _OcclusionMap:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
@@ -77,12 +85,17 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    - _texcoord:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     m_Floats:
     - _AlphaClip: 0
     - _Blend: 0
     - _BumpScale: 1
     - _Cull: 2
     - _Cutoff: 0.5
+    - _DeapthMap: 1.5
     - _DetailNormalMapScale: 1
     - _DiffuseThreshold: 1
     - _DstBlend: 0
@@ -95,6 +108,7 @@ Material:
     - _OcclusionStrength: 1
     - _OutlineThickness: 0.65
     - _Parallax: 0.02
+    - _Power: 5.73
     - _QueueOffset: 0
     - _ReceiveShadows: 1
     - _Shininess: 1
@@ -107,6 +121,7 @@ Material:
     - _Surface: 0
     - _UVSec: 0
     - _ZWrite: 1
+    - __dirty: 1
     m_Colors:
     - _BaseColor: {r: 1, g: 1, b: 1, a: 0}
     - _CollorGlowFloor1: {r: 0.3962264, g: 0.28924862, b: 0.12896048, a: 1}
