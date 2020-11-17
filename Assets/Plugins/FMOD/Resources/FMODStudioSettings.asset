@@ -415,7 +415,7 @@ MonoBehaviour:
   HasSourceProject: 0
   HasPlatforms: 0
   sourceProjectPath: 
-  sourceBankPath: C:/Users/3D/Documents/FMOD Studio/BsD_Fmod_Current/Build/Desktop
+  sourceBankPath: Assets/Fmod Build Bank/Desktop
   SourceBankPathUnformatted: 
   AutomaticEventLoading: 1
   BankLoadType: 0
