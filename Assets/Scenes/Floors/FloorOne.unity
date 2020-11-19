@@ -406,7 +406,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   intensity: 0
   HP: 100
-  volume: 1
+  volume: 100
 --- !u!4 &90892944 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6195716099490676083, guid: 272afbb59e829224bad3f11481560d04, type: 3}

@@ -8,6 +8,7 @@ public class MUS_Controller : MonoBehaviour
     public float intensity;
     public float HP = 100;
     public float volume;
+    public static bool isBoss;
     // Start is called before the first frame update
     void Start()
     {
@@ -22,5 +23,19 @@ public class MUS_Controller : MonoBehaviour
         Music.setParameterByName("Intensity2", intensity);
         Music.setParameterByName("Health", HP);
         Music.setParameterByName("VolumeSetting", volume * .01f);
+        if (Doors.locked && !isBoss)
+        {
+            intensity = 1;
+        }
+        if (Doors.locked && isBoss)
+        {
+            intensity = 2;
+        }
+        //if boss
+        //intensity 2
+        if (!Doors.locked)
+        {
+            intensity = 0;
+        }
     }
 }
