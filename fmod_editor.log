@@ -7,7 +7,7 @@
 [LOG] OutputWASAPI::init                       : Output buffer size: 4096 samples, latency: 0.00ms, period: 10.00ms, DSP buffer: 1024 * 4
 [LOG] Thread::initThread                       : Init FMOD stream thread. Affinity: 0x8000000000000003, Priority: 0xFFFF7FFB, Stack Size: 98304, Semaphore: No, Sleep Time: 10, Looping: Yes.
 [LOG] Thread::initThread                       : Init FMOD mixer thread. Affinity: 0x8000000000000001, Priority: 0xFFFF7FFA, Stack Size: 81920, Semaphore: No, Sleep Time: 0, Looping: Yes.
-[LOG] AsyncManager::init                       : manager 00000264618A7898 isAsync 0 updatePeriod 0.02
+[LOG] AsyncManager::init                       : manager 00000291D1F19E58 isAsync 0 updatePeriod 0.02
 [LOG] AsyncManager::init                       : done
 [LOG] PlaybackSystem::init                     : 
 [LOG] Thread::initThread                       : Init FMOD Studio sample load thread. Affinity: 0x8000000000000003, Priority: 0xFFFF7FFD, Stack Size: 98304, Semaphore: No, Sleep Time: 1, Looping: No.
@@ -15,6 +15,275 @@
 [LOG] Thread::initThread                       : Init FMOD Studio bank load thread. Affinity: 0x8000000000000003, Priority: 0xFFFF7FFD, Stack Size: 98304, Semaphore: No, Sleep Time: 1, Looping: No.
 [LOG] Manager::init                            : done.
 [LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
+[LOG] SystemI::createSound                     : filename = Assets/Fmod Build Bank/Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 00000291B372A688 : node = 00000291C6D46640
+[LOG] SystemI::createSound                     : add node to async list : head = 0000029129DCDB68.  list count = 0
+[LOG] SystemI::createSound                     : filename = Assets/Fmod Build Bank/Desktop/Master.bank : mode 02010082
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 00000291B372A688
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSoundInternal             :     Create name='Assets/Fmod Build Bank/Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSound                     :     setdata soundi = 00000291B372A9E8 : node = 00000291C6D46780
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSound                     :     add node to async list : head = 0000029129DCDB68.  list count = 0
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 1327200
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 7424
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 00000291C6D46750
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='MUS_Intensity2', format=5, channels=2, frequency=48000, lengthbytes=469696, lengthpcm=1570909, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.848699.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 00000291B372A688
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 00000291B372A9E8
+[LOG] SystemI::createSoundInternal             :     Create name='Assets/Fmod Build Bank/Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 1327200
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 7424
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 00000291C6D46890
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='MUS_Intensity1', format=5, channels=2, frequency=48000, lengthbytes=339776, lengthpcm=1256727, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.723309.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 00000291B372A9E8
+[WRN] FMOD_OS_Net_Listen                       : Cannot listen for connections, port 9264 is currently in use.
+[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
+[WRN] FMOD_OS_Net_Listen                       : Cannot listen for connections, port 9264 is currently in use.
+[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
+[WRN] FMOD_OS_Net_Listen                       : Cannot listen for connections, port 9264 is currently in use.
+[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 00000291B372AB98
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 00000291B372AB98
+[WRN] FMOD_OS_Net_Listen                       : Cannot listen for connections, port 9264 is currently in use.
+[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 00000291B3728D38
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 00000291B3728D38
+[WRN] FMOD_OS_Net_Listen                       : Cannot listen for connections, port 9264 is currently in use.
+[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
+[LOG] SystemI::createSound                     : filename = Assets/Fmod Build Bank/Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 0000029129B209B8 : node = 00000291AF153630
+[LOG] SystemI::createSound                     : add node to async list : head = 0000029129DCDB68.  list count = 0
+[LOG] SystemI::createSound                     : filename = Assets/Fmod Build Bank/Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 0000029129B1F3C8 : node = 00000291AF153770
+[LOG] SystemI::createSound                     : add node to async list : head = 0000029129DCDB68.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000029129B209B8
+[LOG] SystemI::createSoundInternal             :     Create name='Assets/Fmod Build Bank/Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 1327200
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 7424
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 00000291AF153740
+[LOG] SystemI::createSound                     : filename = Assets/Fmod Build Bank/Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSound                     :     FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSound                     :     setdata soundi = 0000029129B1F068 : node = 00000291AF153DB0
+[LOG] SystemI::createSound                     :     add node to async list : head = 0000029129DCDB68.  list count = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='MUS_Intensity2', format=5, channels=2, frequency=48000, lengthbytes=469696, lengthpcm=1570909, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.848699.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000029129B209B8
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000029129B1F3C8
+[LOG] SystemI::createSoundInternal             :     Create name='Assets/Fmod Build Bank/Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 1327200
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 7424
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 00000291AF153880
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='MUS_Intensity1', format=5, channels=2, frequency=48000, lengthbytes=339776, lengthpcm=1256727, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.723309.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000029129B1F3C8
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000029129B1F068
+[LOG] SystemI::createSoundInternal             :     Create name='Assets/Fmod Build Bank/Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 1327200
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 7424
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 00000291AF153EC0
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekposition = 1120
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='MUS_Intensity3', format=5, channels=2, frequency=48000, lengthbytes=505888, lengthpcm=1728000, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.877834.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000029129B1F068
+[LOG] SoundI::release                          : MUS_Intensity1 (00000291B372A9E8)
+[LOG] SoundI::release                          :     MUS_Intensity1 (0000029144B25E48)
+[LOG] SoundI::release                          :     MUS_Intensity1 (00000291B372AD48)
+[LOG] SoundI::release                          : MUS_Intensity2 (00000291B372A688)
+[LOG] SoundI::release                          :     MUS_Intensity2 (0000029144B235A8)
+[LOG] SoundI::release                          :     MUS_Intensity2 (00000291B372AB98)
+[LOG] SoundI::release                          : MUS_Intensity3 (00000291B3727E08)
+[LOG] SoundI::release                          :     MUS_Intensity3 (0000029144B25FE8)
+[LOG] SoundI::release                          :     MUS_Intensity3 (00000291B3728D38)
+[WRN] FMOD_OS_Net_Listen                       : Cannot listen for connections, port 9264 is currently in use.
+[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
+[WRN] FMOD_OS_Net_Listen                       : Cannot listen for connections, port 9264 is currently in use.
+[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
+[WRN] FMOD_OS_Net_Listen                       : Cannot listen for connections, port 9264 is currently in use.
+[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
+[WRN] FMOD_OS_Net_Listen                       : Cannot listen for connections, port 9264 is currently in use.
+[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
+[WRN] FMOD_OS_Net_Listen                       : Cannot listen for connections, port 9264 is currently in use.
+[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
+[LOG] SystemI::createSound                     : filename = Assets/Fmod Build Bank/Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 00000291B3729758 : node = 00000291C6D46640
+[LOG] SystemI::createSound                     : add node to async list : head = 0000029129DCDB68.  list count = 0
+[LOG] SystemI::createSound                     : filename = Assets/Fmod Build Bank/Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 00000291B372A688 : node = 00000291C6D46A00
+[LOG] SystemI::createSound                     : add node to async list : head = 0000029129DCDB68.  list count = 1
+[LOG] SystemI::createSound                     : filename = Assets/Fmod Build Bank/Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 00000291B3728D38 : node = 00000291C6D46780
+[LOG] SystemI::createSound                     : add node to async list : head = 0000029129DCDB68.  list count = 1
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 00000291B3729758
+[LOG] SystemI::createSoundInternal             :     Create name='Assets/Fmod Build Bank/Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 1327200
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 7424
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 00000291C6D46750
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='MUS_Intensity2', format=5, channels=2, frequency=48000, lengthbytes=469696, lengthpcm=1570909, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.848699.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 00000291B3729758
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 00000291B372A688
+[LOG] SystemI::createSoundInternal             :     Create name='Assets/Fmod Build Bank/Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 1327200
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 7424
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 00000291C6D46B10
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='MUS_Intensity1', format=5, channels=2, frequency=48000, lengthbytes=339776, lengthpcm=1256727, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.723309.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 00000291B372A688
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 00000291B3728D38
+[LOG] SystemI::createSoundInternal             :     Create name='Assets/Fmod Build Bank/Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 1327200
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 7424
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 00000291C6D46890
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekposition = 1120
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='MUS_Intensity3', format=5, channels=2, frequency=48000, lengthbytes=505888, lengthpcm=1728000, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.877834.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 00000291B3728D38
+[LOG] SoundI::release                          : MUS_Intensity1 (0000029129B1F3C8)
+[LOG] SoundI::release                          :     MUS_Intensity1 (0000029144B28548)
+[LOG] SoundI::release                          :     MUS_Intensity1 (0000029129B1FDE8)
+[LOG] SoundI::release                          : MUS_Intensity3 (0000029129B1F068)
+[LOG] SoundI::release                          :     MUS_Intensity3 (0000029144B25488)
+[LOG] SoundI::release                          :     MUS_Intensity3 (0000029129B202F8)
+[LOG] SoundI::release                          : MUS_Intensity2 (0000029129B209B8)
+[LOG] SoundI::release                          :     MUS_Intensity2 (0000029144B27EC8)
+[LOG] SoundI::release                          :     MUS_Intensity2 (0000029129B20658)
+[WRN] FMOD_OS_Net_Listen                       : Cannot listen for connections, port 9264 is currently in use.
+[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
+[WRN] FMOD_OS_Net_Listen                       : Cannot listen for connections, port 9264 is currently in use.
+[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
+[WRN] FMOD_OS_Net_Listen                       : Cannot listen for connections, port 9264 is currently in use.
+[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
+[WRN] FMOD_OS_Net_Listen                       : Cannot listen for connections, port 9264 is currently in use.
+[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
+[WRN] FMOD_OS_Net_Listen                       : Cannot listen for connections, port 9264 is currently in use.
+[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
+[LOG] SystemI::createSound                     : filename = Assets/Fmod Build Bank/Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 0000029129B20658 : node = 00000291444B6200
+[LOG] SystemI::createSound                     : add node to async list : head = 0000029129DCDB68.  list count = 0
+[LOG] SystemI::createSound                     : filename = Assets/Fmod Build Bank/Desktop/Master.bank : mode 02010082
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000029129B20658
+[LOG] SystemI::createSoundInternal             :     Create name='Assets/Fmod Build Bank/Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 1327200
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 7424
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 00000291444B6310
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSound                     :     setdata soundi = 0000029129B1FDE8 : node = 00000291444B5F80
+[LOG] SystemI::createSound                     :     add node to async list : head = 0000029129DCDB68.  list count = 0
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSound                     :     filename = Assets/Fmod Build Bank/Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     :     FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     :     setdata soundi = 0000029129B209B8 : node = 00000291444B6340
+[LOG] SystemI::createSound                     :     add node to async list : head = 0000029129DCDB68.  list count = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='MUS_Intensity2', format=5, channels=2, frequency=48000, lengthbytes=469696, lengthpcm=1570909, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.848699.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000029129B20658
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000029129B1FDE8
+[LOG] SystemI::createSoundInternal             :     Create name='Assets/Fmod Build Bank/Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 1327200
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 7424
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 00000291444B6090
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='MUS_Intensity1', format=5, channels=2, frequency=48000, lengthbytes=339776, lengthpcm=1256727, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.723309.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000029129B1FDE8
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000029129B209B8
+[LOG] SystemI::createSoundInternal             :     Create name='Assets/Fmod Build Bank/Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 1327200
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 7424
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 00000291444B6450
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekposition = 1120
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='MUS_Intensity3', format=5, channels=2, frequency=48000, lengthbytes=505888, lengthpcm=1728000, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.877834.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000029129B209B8
+[LOG] SoundI::release                          : MUS_Intensity1 (00000291B372A688)
+[LOG] SoundI::release                          :     MUS_Intensity1 (0000029144B27368)
+[LOG] SoundI::release                          :     MUS_Intensity1 (00000291B372A9E8)
+[LOG] SoundI::release                          : MUS_Intensity3 (00000291B3728D38)
+[LOG] SoundI::release                          :     MUS_Intensity3 (0000029144B23A88)
+[LOG] SoundI::release                          :     MUS_Intensity3 (00000291B372AB98)
+[LOG] SoundI::release                          : MUS_Intensity2 (00000291B3729758)
+[LOG] SoundI::release                          :     MUS_Intensity2 (0000029144B24448)
+[LOG] SoundI::release                          :     MUS_Intensity2 (00000291B3728828)
+[WRN] FMOD_OS_Net_Listen                       : Cannot listen for connections, port 9264 is currently in use.
+[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
+[LOG] SoundI::release                          : MUS_Intensity3 (0000029129B209B8)
+[LOG] SoundI::release                          :     MUS_Intensity3 (0000029144B264C8)
+[LOG] SoundI::release                          :     MUS_Intensity3 (0000029129B1F068)
+[LOG] SoundI::release                          : MUS_Intensity1 (0000029129B1FDE8)
+[LOG] SoundI::release                          :     MUS_Intensity1 (0000029144B25B08)
+[LOG] SoundI::release                          :     MUS_Intensity1 (0000029129B20D18)
+[LOG] SoundI::release                          : MUS_Intensity2 (0000029129B20658)
+[LOG] SoundI::release                          :     MUS_Intensity2 (0000029144B28548)
+[LOG] SoundI::release                          :     MUS_Intensity2 (0000029129B202F8)
+[LOG] Thread::callback                         : FMOD Studio update thread finished.
+[LOG] Thread::callback                         : FMOD Studio bank load thread finished.
+[LOG] Profile::disconnectAll                   : Profiler disconnecting all clients
+[LOG] Thread::callback                         : FMOD Studio sample load thread finished.
+[LOG] LiveUpdate::release                      : 
+[LOG] LiveUpdate::reset                        : Reset connection (reason Disconnected)
+[LOG] Thread::callback                         : FMOD stream thread finished.
+[LOG] Thread::callback                         : FMOD mixer thread finished.
+[LOG] Profile::disconnectAll                   : Profiler disconnecting all clients
+[LOG] SystemI::close                           : Closed.
+[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
 [LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
 [LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
 [LOG] PlaybackSystem::acquireMasterBus         : Setting master channel group format to 6
+[LOG] Thread::callback                         : FMOD Studio bank load thread finished.
+[LOG] Thread::callback                         : FMOD Studio sample load thread finished.
+[LOG] LiveUpdate::release                      : 
+[LOG] LiveUpdate::reset                        : Reset connection (reason Disconnected)
+[LOG] Thread::callback                         : FMOD stream thread finished.
+[LOG] Thread::callback                         : FMOD mixer thread finished.
+[LOG] SystemI::close                           : Closed.
