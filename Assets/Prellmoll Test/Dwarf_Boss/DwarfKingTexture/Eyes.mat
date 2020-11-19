@@ -8,7 +8,7 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Eyes
-  m_Shader: {fileID: 4800000, guid: 4958959d2b077b64b8401784ff4046c2, type: 3}
+  m_Shader: {fileID: 4800000, guid: d440afcc94ab2e043b52f94e5d6afd0b, type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
@@ -19,6 +19,10 @@ Material:
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs:
+    - _BaseTextur:
+        m_Texture: {fileID: 2800000, guid: 16f8e089f978a9147add670c416e36c0, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - _BumpMap:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
@@ -47,6 +51,10 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    - _NormalMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - _OcclusionMap:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
@@ -55,9 +63,14 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    - _texcoord:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     m_Floats:
     - _BumpScale: 1
     - _Cutoff: 0.5
+    - _DeapthMap: 0
     - _DetailNormalMapScale: 1
     - _DiffuseThreshold: 1
     - _DstBlend: 0
@@ -69,12 +82,14 @@ Material:
     - _OcclusionStrength: 1
     - _OutlineThickness: 0.65
     - _Parallax: 0.02
+    - _Power: 5.78
     - _Shininess: 1
     - _SmoothnessTextureChannel: 0
     - _SpecularHighlights: 1
     - _SrcBlend: 1
     - _UVSec: 0
     - _ZWrite: 1
+    - __dirty: 1
     m_Colors:
     - _CollorGlowFloor1: {r: 0.5, g: 0.5, b: 0.5, a: 1}
     - _CollorGlowFloor2: {r: 0.5, g: 0.5, b: 0.5, a: 1}
