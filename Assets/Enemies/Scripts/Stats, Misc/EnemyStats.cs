@@ -69,6 +69,10 @@ public class EnemyStats : MonoBehaviour
 	public IEnumerator TakeDamage(float amount)
 	{
 		hp -= amount;
-		yield return new WaitForSeconds(.3f);
+		if (!isThisBoss)
+			//GetComponent<Rigidbody>().AddForce(-transform.forward * 1f, ForceMode.Impulse);
+
+			yield return new WaitForSeconds(1f);
+		//GetComponent<Rigidbody>().velocity = Vector3.zero;
 	}
 }

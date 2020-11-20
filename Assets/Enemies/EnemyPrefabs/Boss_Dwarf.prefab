@@ -107,7 +107,7 @@ GameObject:
   - component: {fileID: 5231341472450363670}
   - component: {fileID: 5231341472450363676}
   - component: {fileID: 5231341472450363677}
-  - component: {fileID: 5231341472450363671}
+  - component: {fileID: 1234936341627323009}
   m_Layer: 11
   m_Name: Boss_Dwarf
   m_TagString: Boss
@@ -236,7 +236,14 @@ MonoBehaviour:
   chargeTimeBigAttack: 0
   firerate: 0
   lastfired: 0
+  bigAtkTurnSpeed: 0
+  startedTurning: 0
   currentFacing: {x: 0, y: 0, z: 0}
+  fullRotation: {x: 0, y: 0, z: 0}
+  rotCompleted: {x: 0, y: 0, z: 0}
+  hasMoved: 0
+  Spinning: 0
+  healthBar: {fileID: 0}
 --- !u!195 &5231341472450363677
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -259,7 +266,7 @@ NavMeshAgent:
   m_BaseOffset: 0.5
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
---- !u!114 &5231341472450363671
+--- !u!114 &1234936341627323009
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -268,10 +275,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 4665686507346710879}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 090858526535fa34fa5ac28fc3f101ce, type: 3}
+  m_Script: {fileID: 11500000, guid: 012ddf6ae988c2a4e9a1a875fa2b9b87, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  phase2: 1
+  healthBarSlider: {fileID: 0}
+  eStats: {fileID: 0}
 --- !u!1 &8317973426056940536
 GameObject:
   m_ObjectHideFlags: 0

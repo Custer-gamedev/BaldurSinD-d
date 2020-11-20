@@ -20,11 +20,12 @@ public class Boss_Dwarf_Controller : MonoBehaviour
 	bool lookAtPlayer;
 	public bool hasMoved, Spinning;
 	Vector3 curPos;
-
+	public GameObject healthBar;
 
 
 	void Start()
 	{
+		healthBar.SetActive(true);
 		MUS_Controller.isBoss = true;
 		fullRotation = new Vector3(0, 359, 0);
 		player = GameObject.FindGameObjectWithTag("Player");

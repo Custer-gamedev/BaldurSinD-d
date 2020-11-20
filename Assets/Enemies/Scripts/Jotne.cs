@@ -22,7 +22,8 @@ public class Jotne : MonoBehaviour
 	public float projectileSpeed, chaseSize, spinningSpeed;
 	public LayerMask playerMask;
 	private NavMeshAgent navM;
-	public GameObject iceTaps;
+	public GameObject iceTaps, healthBar;
+
 	float shootWait, stompWait;
 	bool spinny;
 	float coolDownTime = .1f;
@@ -36,6 +37,7 @@ public class Jotne : MonoBehaviour
 		shootWait = coolDownTime;
 		stompWait = coolDownTime;
 		StartCoroutine(ChangeState());
+		healthBar.SetActive(true);
 	}
 	void Update()
 	{
