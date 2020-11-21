@@ -4,7 +4,7 @@ using UnityEngine;
 public class EnemyStats : MonoBehaviour
 {
 	public float hp, damage;
-	public GameObject soul, nextFloor;
+	public GameObject soul, nextFloor, model;
 	public bool isThisBoss, useSouls;
 	public bool Souls()
 	{
@@ -70,9 +70,20 @@ public class EnemyStats : MonoBehaviour
 	{
 		hp -= amount;
 		if (!isThisBoss)
-			//GetComponent<Rigidbody>().AddForce(-transform.forward * 1f, ForceMode.Impulse);
+			StartCoroutine(ModelFlash());
 
-			yield return new WaitForSeconds(1f);
+		yield return new WaitForSeconds(1f);
 		//GetComponent<Rigidbody>().velocity = Vector3.zero;
+	}
+	public IEnumerator ModelFlash()
+	{
+
+		model.SetActive(false);
+		yield return new WaitForSeconds(.1f);
+		model.SetActive(true);
+		yield return new WaitForSeconds(.1f);
+		model.SetActive(false);
+		yield return new WaitForSeconds(.1f);
+		model.SetActive(true);
 	}
 }
