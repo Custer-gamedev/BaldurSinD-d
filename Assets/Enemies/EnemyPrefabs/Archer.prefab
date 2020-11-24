@@ -194,6 +194,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2546417121907155015}
     m_Modifications:
+    - target: {fileID: 3227161416615129480, guid: 438302e09f2bdb44fb8d77787288b05f, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 22eeeb0daee419240940ee61b4c3af2f, type: 2}
     - target: {fileID: 5809556930225068492, guid: 438302e09f2bdb44fb8d77787288b05f, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -238,6 +242,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5970962450308070562, guid: 438302e09f2bdb44fb8d77787288b05f, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: d33f92dcd591d3b48bab60ff6ad0b062, type: 2}
     - target: {fileID: 6617021040575447926, guid: 438302e09f2bdb44fb8d77787288b05f, type: 3}
       propertyPath: m_Name
       value: DwarfRange
