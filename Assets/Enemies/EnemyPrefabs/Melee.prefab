@@ -67,6 +67,7 @@ MonoBehaviour:
   damage: 0.5
   soul: {fileID: 4681955541393232707, guid: b107bcae72dd651409d7042ba4edd3c9, type: 3}
   nextFloor: {fileID: 0}
+  model: {fileID: 5512627139581439275}
   isThisBoss: 0
   useSouls: 1
 --- !u!195 &5653065321974140916
@@ -158,7 +159,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7227567377588966640}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0.96}
+  m_LocalPosition: {x: 0, y: 1, z: 1.41}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 3125724318953513780}
@@ -250,6 +251,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: caf879230b9ff564a9398aafe2639146, type: 3}
+--- !u!1 &5512627139581439275 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6396319363447221284, guid: caf879230b9ff564a9398aafe2639146, type: 3}
+  m_PrefabInstance: {fileID: 1460437036775538959}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &5173256641950103441 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6021200821965371038, guid: caf879230b9ff564a9398aafe2639146, type: 3}

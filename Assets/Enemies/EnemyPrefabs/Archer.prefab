@@ -120,6 +120,7 @@ MonoBehaviour:
   damage: 1
   soul: {fileID: 4681955541393232707, guid: b107bcae72dd651409d7042ba4edd3c9, type: 3}
   nextFloor: {fileID: 0}
+  model: {fileID: 335352222347557236}
   isThisBoss: 0
   useSouls: 1
 --- !u!114 &6490222628365045511
@@ -252,6 +253,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 438302e09f2bdb44fb8d77787288b05f, type: 3}
+--- !u!1 &335352222347557236 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6617021040575447926, guid: 438302e09f2bdb44fb8d77787288b05f, type: 3}
+  m_PrefabInstance: {fileID: 6877850411259197954}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1147496228034552782 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5809556930225068492, guid: 438302e09f2bdb44fb8d77787288b05f, type: 3}

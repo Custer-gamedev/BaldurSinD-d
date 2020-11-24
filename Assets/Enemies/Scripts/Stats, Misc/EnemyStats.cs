@@ -1,11 +1,14 @@
 ﻿using System.Collections;
 using UnityEngine;
+using UnityEngine.AI;
 
 public class EnemyStats : MonoBehaviour
 {
 	public float hp, damage;
-	public GameObject soul, nextFloor;
+	public GameObject soul, nextFloor, model;
 	public bool isThisBoss, useSouls;
+	private NavMeshAgent agent;
+	private Rigidbody rb;
 	public bool Souls()
 	{
 		int rand = Random.Range(0, 4);
@@ -21,6 +24,12 @@ public class EnemyStats : MonoBehaviour
 	{
 		enemiesList = GameObject.FindGameObjectWithTag("GameController").GetComponent<EnemiesList>();
 		PlayerStats p = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerStats>();
+		if (!isThisBoss)
+		{
+			agent = GetComponent<NavMeshAgent>();
+			rb = GetComponent<Rigidbody>();
+		}
+
 	}
 	void Update()
 	{
@@ -70,9 +79,31 @@ public class EnemyStats : MonoBehaviour
 	{
 		hp -= amount;
 		if (!isThisBoss)
-			//GetComponent<Rigidbody>().AddForce(-transform.forward * 1f, ForceMode.Impulse);
-
-			yield return new WaitForSeconds(1f);
+		{
+			StartCoroutine(ModelFlash());
+			//	StartCoroutine(Knockback());
+		}
+		yield return new WaitForSeconds(1f);
 		//GetComponent<Rigidbody>().velocity = Vector3.zero;
+	}
+	public IEnumerator Knockback()
+	{
+		agent.isStopped = true;
+		rb.AddForce(-transform.forward * 2f, ForceMode.Impulse);
+		yield return new WaitForSeconds(1);
+		rb.velocity = Vector3.zero;
+		agent.isStopped = false;
+
+	}
+	public IEnumerator ModelFlash()
+	{
+
+		model.SetActive(false);
+		yield return new WaitForSeconds(.1f);
+		model.SetActive(true);
+		yield return new WaitForSeconds(.1f);
+		model.SetActive(false);
+		yield return new WaitForSeconds(.1f);
+		model.SetActive(true);
 	}
 }
