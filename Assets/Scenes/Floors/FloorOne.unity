@@ -2387,6 +2387,7 @@ GameObject:
   - component: {fileID: 963194227}
   - component: {fileID: 963194226}
   - component: {fileID: 963194229}
+  - component: {fileID: 963194230}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -2520,6 +2521,18 @@ MonoBehaviour:
   m_BeforeTransparentBundles: []
   m_BeforeStackBundles: []
   m_AfterStackBundles: []
+--- !u!114 &963194230
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 963194225}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d6ff60513a4da364ba9634a14f8e94e7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &992860222
 GameObject:
   m_ObjectHideFlags: 0
@@ -5847,10 +5860,22 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4717022203369442089, guid: bf1f2bf7dc2cdfd46b35c28f337a8936, type: 3}
       propertyPath: enemySet.Array.size
-      value: 5
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 4717022203369442089, guid: bf1f2bf7dc2cdfd46b35c28f337a8936, type: 3}
       propertyPath: enemySet.Array.data[4]
+      value: 
+      objectReference: {fileID: 11400000, guid: 672b43254ac5fa845bb21c1bc61cf423, type: 2}
+    - target: {fileID: 4717022203369442089, guid: bf1f2bf7dc2cdfd46b35c28f337a8936, type: 3}
+      propertyPath: enemySet.Array.data[5]
+      value: 
+      objectReference: {fileID: 11400000, guid: a4338bc486edb2b4b9bc295ed20582e8, type: 2}
+    - target: {fileID: 4717022203369442089, guid: bf1f2bf7dc2cdfd46b35c28f337a8936, type: 3}
+      propertyPath: enemySet.Array.data[6]
+      value: 
+      objectReference: {fileID: 11400000, guid: 9b42447a70229f74290110983b6dd563, type: 2}
+    - target: {fileID: 4717022203369442089, guid: bf1f2bf7dc2cdfd46b35c28f337a8936, type: 3}
+      propertyPath: enemySet.Array.data[7]
       value: 
       objectReference: {fileID: 11400000, guid: 672b43254ac5fa845bb21c1bc61cf423, type: 2}
     - target: {fileID: 4717022203369442090, guid: bf1f2bf7dc2cdfd46b35c28f337a8936, type: 3}

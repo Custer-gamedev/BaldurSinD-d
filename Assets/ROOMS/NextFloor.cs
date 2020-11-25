@@ -14,6 +14,7 @@ public class NextFloor : MonoBehaviour
 			other.GetComponent<PlayerStats>().GetFloorCleared(1);
 			SceneManager.LoadScene(floorToLoad);
 			other.transform.position = new Vector3(0, 1f, 0);
+			GameObject.FindGameObjectWithTag("MainCamera").transform.position = new Vector3(-8.687653f, 12.36444f, -10.69486f);
 		}
 	}
 }
