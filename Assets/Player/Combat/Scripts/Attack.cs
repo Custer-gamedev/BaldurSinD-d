@@ -57,7 +57,7 @@ public class Attack : MonoBehaviour
 		#endregion
 
 		#region SecondAttack
-		float CoolDownTime2 = coolDownTime * 2f;
+		float CoolDownTime2 = coolDownTime * 2.4f;
 		AxeOnMap.SetActive(!gotAxe);
 		if (gotAxe)
 		{

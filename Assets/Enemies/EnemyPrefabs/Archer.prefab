@@ -116,7 +116,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a3481d58dd0e21f4fa05fc9bc62ee6c6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hp: 11
+  hp: 12
   damage: 1
   soul: {fileID: 4681955541393232707, guid: b107bcae72dd651409d7042ba4edd3c9, type: 3}
   nextFloor: {fileID: 0}

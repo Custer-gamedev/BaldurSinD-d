@@ -193,7 +193,7 @@ MonoBehaviour:
   eStats: {fileID: 0}
   damage: 0
   player: {fileID: 0}
-  waitTime: 2
+  waitTime: 0.85
 --- !u!1001 &1460437036775538959
 PrefabInstance:
   m_ObjectHideFlags: 0
