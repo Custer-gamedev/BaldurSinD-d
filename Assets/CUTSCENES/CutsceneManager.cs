@@ -21,6 +21,7 @@ public class CutsceneManager : MonoBehaviour
 		stuffToEnable.Add(GameObject.Find("ATCK2canvas"));
 		stuffToEnable.Add(GameObject.Find("Canvas"));
 		videoPlayer = GetComponent<VideoPlayer>();
+		videoPlayer.targetCamera = Camera.main;
 
 	}
 	private void Start()
