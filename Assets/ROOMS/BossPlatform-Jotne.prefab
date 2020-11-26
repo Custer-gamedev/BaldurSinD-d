@@ -3204,7 +3204,7 @@ MonoBehaviour:
   playerMask:
     serializedVersion: 2
     m_Bits: 512
-  iceTaps: {fileID: 8993182752454005155, guid: a1ed959cb29c319458805e18ff3bca57, type: 3}
+  iceTaps: {fileID: 59835837224449844, guid: b312a86169a1458449f0157ed0d5ae3c, type: 3}
   healthBar: {fileID: 4147736040024335321}
 --- !u!195 &4743293383765644567
 NavMeshAgent:
@@ -3257,6 +3257,7 @@ MonoBehaviour:
   damage: 0
   soul: {fileID: 0}
   nextFloor: {fileID: 4025846233917833376, guid: d3df9ff91d4e1874c8bd70cff70bb059, type: 3}
+  model: {fileID: 0}
   isThisBoss: 1
   useSouls: 0
 --- !u!114 &6911380969567655453

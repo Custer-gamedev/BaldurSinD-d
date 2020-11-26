@@ -43,7 +43,7 @@ public class SetCam : MonoBehaviour
 	{
 		if (other.transform.tag == "BossRoom")
 		{
-			transform.parent.GetComponent<Renderer>().material.color = Color.red;
+			transform.parent.parent.Find("Skull").gameObject.SetActive(true);
 		}
 	}
 }
