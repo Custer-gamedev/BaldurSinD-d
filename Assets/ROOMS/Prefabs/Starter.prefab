@@ -3914,8 +3914,6 @@ GameObject:
   - component: {fileID: 7421690840277084932}
   - component: {fileID: 202853937600360640}
   - component: {fileID: 7573050364334988902}
-  - component: {fileID: 2858247452116197092}
-  - component: {fileID: 1950234303809289445}
   m_Layer: 10
   m_Name: Starter
   m_TagString: Room
@@ -4052,36 +4050,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 10, y: 2.220446e-16, z: 10}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &2858247452116197092
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4010891946996747741}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4b5ab75e3132f57458f098a87a125dd2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  xRand: 0
-  yRand: 0
-  rend: {fileID: 0}
---- !u!114 &1950234303809289445
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4010891946996747741}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4b5ab75e3132f57458f098a87a125dd2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  xRand: 0
-  yRand: 0
-  rend: {fileID: 0}
 --- !u!1 &4019537341599080000
 GameObject:
   m_ObjectHideFlags: 0
@@ -6434,6 +6402,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6969713169428169985}
   - component: {fileID: 3580812251880252208}
+  - component: {fileID: 4010290578830373243}
   m_Layer: 10
   m_Name: Point Light
   m_TagString: Untagged
@@ -6516,6 +6485,20 @@ Light:
   m_UseBoundingSphereOverride: 0
   m_ShadowRadius: 0
   m_ShadowAngle: 0
+--- !u!114 &4010290578830373243
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6581734483479727351}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cb0ce6e8ff15d864d8f4abd3c613148a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sNname: 
+  lightcolor: {r: 0, g: 0.461101, b: 0.6509434, a: 1}
 --- !u!1 &6676682784352630601
 GameObject:
   m_ObjectHideFlags: 0
