@@ -117,7 +117,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hp: 12
-  damage: 1
+  damage: 0.5
   soul: {fileID: 4681955541393232707, guid: b107bcae72dd651409d7042ba4edd3c9, type: 3}
   nextFloor: {fileID: 0}
   model: {fileID: 335352222347557236}
