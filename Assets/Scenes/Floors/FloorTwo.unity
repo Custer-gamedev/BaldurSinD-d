@@ -562,6 +562,10 @@ PrefabInstance:
       propertyPath: m_Color.b
       value: 0.6509804
       objectReference: {fileID: 0}
+    - target: {fileID: 3580812251880252208, guid: 272afbb59e829224bad3f11481560d04, type: 3}
+      propertyPath: m_Range
+      value: 11.23
+      objectReference: {fileID: 0}
     - target: {fileID: 4010891946996747741, guid: 272afbb59e829224bad3f11481560d04, type: 3}
       propertyPath: m_Name
       value: Starter
@@ -640,8 +644,8 @@ Light:
   serializedVersion: 10
   m_Type: 1
   m_Shape: 0
-  m_Color: {r: 0.13465646, g: 0.2368949, b: 0.3207547, a: 1}
-  m_Intensity: 0.55
+  m_Color: {r: 0.58708614, g: 0.59925514, b: 0.745283, a: 1}
+  m_Intensity: 0.73
   m_Range: 10
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208

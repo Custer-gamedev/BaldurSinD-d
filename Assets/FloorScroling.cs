@@ -14,7 +14,8 @@ public class FloorScroling : MonoBehaviour
 
         rend = GetComponent<MeshRenderer>().material;
 
-        rend.SetTextureOffset("Base Textur", new Vector2(xRand,yRand));
+        rend.mainTextureOffset = new Vector2(xRand,yRand);
+        
     }
 
     // Update is called once per frame
