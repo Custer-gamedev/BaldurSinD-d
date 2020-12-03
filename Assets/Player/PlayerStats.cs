@@ -28,6 +28,15 @@ public class PlayerStats : MonoBehaviour
 	}
 
 	#region SaveData
+
+	private void Update()
+	{
+		if (health <= 0)
+		{
+			SaveData.Save(data);
+			UnityEngine.SceneManagement.SceneManager.LoadScene("DeathScreen");
+		}
+	}
 	public void GetNormalKills(int amount)
 	{
 		data.kills += amount;
