@@ -180,9 +180,9 @@ MonoBehaviour:
   Is3D: 0
   IsOneShot: 0
   Parameters:
-  - {fileID: 1269959430471402932}
-  - {fileID: -627914987425028309}
-  - {fileID: -5525712878593684524}
+  - {fileID: 7207542051703244084}
+  - {fileID: -491793276359619621}
+  - {fileID: 2961179205391087397}
   MinDistance: 0
   MaxDistance: 0
   Length: 36000
@@ -363,7 +363,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: Assets/Fmod Build Bank/Desktop/Master.strings.bank
   Name: Master.strings
-  lastModified: 637414592364839537
+  lastModified: 637423485698467551
   LoadResult: 0
   FileSizes:
   - Name: 
@@ -483,7 +483,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: Assets/Fmod Build Bank/Desktop/Master.bank
   Name: Master
-  lastModified: 637414592365174606
+  lastModified: 637423485698587581
   LoadResult: 0
   FileSizes: []
   Exists: 1
@@ -567,6 +567,26 @@ MonoBehaviour:
     data1: 0
     data2: 0
   Exists: 1
+--- !u!114 &-491793276359619621
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/MUS_F1/Intensity2
+  m_EditorClassIdentifier: 
+  Name: Intensity2
+  Min: 0
+  Max: 3
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Exists: 1
 --- !u!114 &-214660422626674909
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -630,7 +650,7 @@ MonoBehaviour:
   - {fileID: -1888007896121541904}
   StringsBanks:
   - {fileID: -4022576042256788514}
-  stringsBankWriteTime: 637414592364839537
+  stringsBankWriteTime: 637423485698467551
   cacheVersion: 5
 --- !u!114 &545494417014633183
 MonoBehaviour:
@@ -752,6 +772,26 @@ MonoBehaviour:
     data1: 0
     data2: 0
   Exists: 0
+--- !u!114 &2961179205391087397
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/MUS_F1/VolumeSetting
+  m_EditorClassIdentifier: 
+  Name: VolumeSetting
+  Min: 0
+  Max: 1
+  Default: 1
+  ID:
+    data1: 0
+    data2: 0
+  Exists: 1
 --- !u!114 &3320590602432320531
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -977,6 +1017,26 @@ MonoBehaviour:
   Min: 0
   Max: 2
   Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Exists: 1
+--- !u!114 &7207542051703244084
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/MUS_F1/Health
+  m_EditorClassIdentifier: 
+  Name: Health
+  Min: 0
+  Max: 100
+  Default: 100
   ID:
     data1: 0
     data2: 0

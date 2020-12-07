@@ -122,7 +122,7 @@ GameObject:
   - component: {fileID: 763489958420137404}
   - component: {fileID: 5528410955641169353}
   - component: {fileID: 4976124229334904066}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Bolts
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1047,7 +1047,7 @@ GameObject:
   - component: {fileID: 6949313975049251611}
   - component: {fileID: 6994359812307544406}
   - component: {fileID: 8274031449940653747}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Steel_Buffer
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1457,7 +1457,7 @@ GameObject:
   - component: {fileID: 286877973232145026}
   - component: {fileID: 8557249199021899334}
   - component: {fileID: 6082608538447498463}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Buffer_Holder
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1843,7 +1843,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2307614023757125751}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Rail Buffer
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2195,7 +2195,7 @@ GameObject:
   - component: {fileID: 5697619148944914742}
   - component: {fileID: 6101227907223076231}
   - component: {fileID: 7819901083063744217}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Rail_Sleeper4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2643,7 +2643,7 @@ GameObject:
   - component: {fileID: 5968165007361443184}
   - component: {fileID: 4236728632107022665}
   - component: {fileID: 7852807455923450026}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Steel_Rail4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3455,7 +3455,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8017411508258225519}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Rails 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3651,7 +3651,7 @@ GameObject:
   - component: {fileID: 6372545536344897659}
   - component: {fileID: 8360650468004542101}
   - component: {fileID: 8248066210607362001}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Rail_Sleeper4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4028,7 +4028,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1896751723899405926}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Rails 1 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4194,7 +4194,7 @@ GameObject:
   - component: {fileID: 258347737718750114}
   - component: {fileID: 4286054446833618132}
   - component: {fileID: 4221985183240708284}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Steel_Rail4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4579,7 +4579,7 @@ GameObject:
   - component: {fileID: 6977525790410046531}
   - component: {fileID: 3143366941970080247}
   - component: {fileID: 8298819275963954210}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Rail_Buffer
   m_TagString: Untagged
   m_Icon: {fileID: 0}
