@@ -12,7 +12,7 @@ public class KeepBetweenScenes : MonoBehaviour
 	private void Update()
 	{
 		Scene scene = SceneManager.GetActiveScene();
-		if (scene.name == "MainMenu" || scene.name == "DeathScreen")
+		if (scene.name == "MainMenu" || scene.name == "DeathScreen" || scene.name == "FloorThree")
 		{
 			print("ayaya");
 			Destroy(this.gameObject);

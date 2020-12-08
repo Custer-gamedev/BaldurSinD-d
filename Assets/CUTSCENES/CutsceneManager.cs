@@ -12,6 +12,8 @@ public class CutsceneManager : MonoBehaviour
 	public List<GameObject> stuffToEnable;
 	public Animation textAnim;
 	public float waitTime, cutsceneLength;
+
+	private AudioSource audioSource;
 	bool canSkip;
 	bool floorTwoPlayed, floorThreePlayed;
 	private void Awake()
@@ -30,7 +32,17 @@ public class CutsceneManager : MonoBehaviour
 		{
 			stuffToEnable[i].SetActive(false);
 		}
+
+		/*audioSource = gameObject.AddComponent<AudioSource>();
+		audioSource.playOnAwake = false;
+		videoPlayer.Prepare();
+
+		videoPlayer.EnableAudioTrack(0, true);
+		videoPlayer.SetTargetAudioSource(0, audioSource);
+
+		audioSource.Play(); */
 		videoPlayer.Play();
+
 		StartCoroutine(CanSkip());
 		StartCoroutine(IsPlaying());
 		PlayerMove.allowedToMove = false;
