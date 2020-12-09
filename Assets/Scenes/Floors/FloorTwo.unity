@@ -370,7 +370,7 @@ MonoBehaviour:
   minAllowedSpawn: 10
   maxAllowedSpawn: 25
   currentSpawned: 0
-  waitTime: 1.8
+  waitTime: 4.5
   roomsList: []
   surfaces: []
   bossSpawn: 0

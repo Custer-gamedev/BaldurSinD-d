@@ -9,7 +9,9 @@ public class PreviewCutscenes : MonoBehaviour
 	public VideoPlayer videoPlayer;
 	public float waitTime, cutsceneLength;
 	public static int videoNumber;
+	public AudioSource aS;
 	public List<VideoClip> videoClips = new List<VideoClip>();
+	public List<AudioClip> audioClips = new List<AudioClip>();
 	public Animation textAnim;
 
 	bool canSkip;
@@ -17,16 +19,21 @@ public class PreviewCutscenes : MonoBehaviour
 	void Start()
 	{
 		videoPlayer = GetComponent<VideoPlayer>();
+		aS = GetComponent<AudioSource>();
 
 		if (useVideoNumber)
 		{
 			VideoClip playThisFromList;
+			AudioClip playThisFromAudio;
+			playThisFromAudio = audioClips[videoNumber];
 			playThisFromList = videoClips[videoNumber];
 			videoPlayer.clip = playThisFromList;
+			aS.clip = playThisFromAudio;
+			aS.Play();
 			cutsceneLength = (float)videoPlayer.length;
 
-
 		}
+		cutsceneLength = (float)videoPlayer.length;
 
 		videoPlayer.Play();
 		StartCoroutine(CanSkip());

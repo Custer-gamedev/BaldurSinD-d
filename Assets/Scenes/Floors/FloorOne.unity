@@ -406,7 +406,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   intensity: 0
   HP: 100
-  volume: 0
 --- !u!1 &125162749 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4914242273290444327, guid: 7f4d142f9dd2ba247bfb45d6b319e641, type: 3}
@@ -801,7 +800,7 @@ MonoBehaviour:
   minAllowedSpawn: 6
   maxAllowedSpawn: 10
   currentSpawned: 0
-  waitTime: 2.5
+  waitTime: 4.5
   roomsList: []
   surfaces: []
   bossSpawn: 0
@@ -2192,6 +2191,7 @@ GameObject:
   m_Component:
   - component: {fileID: 992860223}
   - component: {fileID: 992860224}
+  - component: {fileID: 992860225}
   m_Layer: 0
   m_Name: Sound
   m_TagString: Untagged
@@ -2235,6 +2235,18 @@ MonoBehaviour:
   - Master
   CollisionTag: 
   PreloadSamples: 0
+--- !u!114 &992860225
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 992860222}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d6ff60513a4da364ba9634a14f8e94e7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1025867682
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4413,6 +4425,10 @@ PrefabInstance:
     - target: {fileID: 4456025362134527809, guid: 1c0fb9c284c1ec24290220ec2ffd886c, type: 3}
       propertyPath: m_Name
       value: ButtonInspectorCanvas
+      objectReference: {fileID: 0}
+    - target: {fileID: 4456025362134527809, guid: 1c0fb9c284c1ec24290220ec2ffd886c, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5594848011034941472, guid: 1c0fb9c284c1ec24290220ec2ffd886c, type: 3}
       propertyPath: m_LocalPosition.x

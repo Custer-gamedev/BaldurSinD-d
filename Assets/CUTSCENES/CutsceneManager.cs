@@ -42,6 +42,7 @@ public class CutsceneManager : MonoBehaviour
 
 		audioSource.Play(); */
 		videoPlayer.Play();
+		MUS_Controller.volume = 0;
 
 		StartCoroutine(CanSkip());
 		StartCoroutine(IsPlaying());
@@ -68,7 +69,7 @@ public class CutsceneManager : MonoBehaviour
 		{
 			stuffToEnable[i].SetActive(true);
 		}
-		GameObject.Find("MUS_Controller").GetComponent<MUS_Controller>().volume = 100;
+		MUS_Controller.volume = 100;
 		PlayerMove.allowedToMove = true;
 		videoPlayer.Stop();
 		Destroy(this.gameObject);
