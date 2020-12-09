@@ -406,7 +406,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   intensity: 0
   HP: 100
-  volume: 0
 --- !u!1 &125162749 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4914242273290444327, guid: 7f4d142f9dd2ba247bfb45d6b319e641, type: 3}
@@ -801,7 +800,7 @@ MonoBehaviour:
   minAllowedSpawn: 6
   maxAllowedSpawn: 10
   currentSpawned: 0
-  waitTime: 2.5
+  waitTime: 4.5
   roomsList: []
   surfaces: []
   bossSpawn: 0
