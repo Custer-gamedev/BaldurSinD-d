@@ -68,6 +68,7 @@ public class CutsceneManager : MonoBehaviour
 		{
 			stuffToEnable[i].SetActive(true);
 		}
+		GameObject.Find("MUS_Controller").GetComponent<MUS_Controller>().volume = 100;
 		PlayerMove.allowedToMove = true;
 		videoPlayer.Stop();
 		Destroy(this.gameObject);
