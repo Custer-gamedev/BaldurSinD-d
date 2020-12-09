@@ -4,10 +4,7 @@
         "Unity.Timeline"
     ],
     "includePlatforms": [],
-    "excludePlatforms": [
-        "WindowsStandalone32",
-        "WindowsStandalone64"
-    ],
+    "excludePlatforms": [],
     "allowUnsafeCode": false,
     "overrideReferences": false,
     "precompiledReferences": [],

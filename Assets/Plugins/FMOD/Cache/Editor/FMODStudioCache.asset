@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!114 &-8674851435581547636
+--- !u!114 &-8577032333880846216
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -9,178 +9,16 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/MUS_F1/Intensity2
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Dialogue.bank
   m_EditorClassIdentifier: 
-  Name: Intensity2
-  Min: 0
-  Max: 3
-  Default: 0
-  ID:
-    data1: 0
-    data2: 0
+  Path: Assets/Fmod Build Bank/Desktop/Dialogue.bank
+  Name: Dialogue
+  lastModified: 637431325794483144
+  LoadResult: 0
+  FileSizes: []
   Exists: 1
---- !u!114 &-8494560480820888565
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/MUS_F1/Health
-  m_EditorClassIdentifier: 
-  Name: Health
-  Min: 0
-  Max: 100
-  Default: 100
-  ID:
-    data1: 0
-    data2: 0
-  Exists: 0
---- !u!114 &-8202947931252974579
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/MUS_F1/VolumeSetting
-  m_EditorClassIdentifier: 
-  Name: VolumeSetting
-  Min: 0
-  Max: 1
-  Default: 1
-  ID:
-    data1: 0
-    data2: 0
-  Exists: 1
---- !u!114 &-7872317937959497381
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/MUS_F1/Intensity2
-  m_EditorClassIdentifier: 
-  Name: Intensity2
-  Min: 0
-  Max: 3
-  Default: 0
-  ID:
-    data1: 0
-    data2: 0
-  Exists: 0
---- !u!114 &-7802847974082844586
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/MUS_F1/Health
-  m_EditorClassIdentifier: 
-  Name: Health
-  Min: 0
-  Max: 100
-  Default: 100
-  ID:
-    data1: 0
-    data2: 0
-  Exists: 1
---- !u!114 &-7346601683239058813
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/MUS_F1/BeforeBoss
-  m_EditorClassIdentifier: 
-  Name: BeforeBoss
-  Min: 0
-  Max: 1
-  Default: 0
-  ID:
-    data1: 0
-    data2: 0
-  Exists: 0
---- !u!114 &-7199297366835746225
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/MUS_F1/VolumeSetting
-  m_EditorClassIdentifier: 
-  Name: VolumeSetting
-  Min: 0
-  Max: 1
-  Default: 1
-  ID:
-    data1: 0
-    data2: 0
-  Exists: 0
---- !u!114 &-7069050358305753693
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/MUS_F1/VolumeSetting
-  m_EditorClassIdentifier: 
-  Name: VolumeSetting
-  Min: 0
-  Max: 1
-  Default: 1
-  ID:
-    data1: 0
-    data2: 0
-  Exists: 1
---- !u!114 &-7025350120389466530
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/MUS_F1/Intensity2
-  m_EditorClassIdentifier: 
-  Name: Intensity2
-  Min: 0
-  Max: 3
-  Default: 0
-  ID:
-    data1: 0
-    data2: 0
-  Exists: 0
---- !u!114 &-6889006662740883223
+--- !u!114 &-7523224893491439031
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -195,138 +33,18 @@ MonoBehaviour:
   Path: event:/MUS/MUS_F1
   guid: 584cc65cfe79a54b8022ff7862ac3fc0
   Banks:
-  - {fileID: -1888007896121541904}
+  - {fileID: -1801209842162077975}
   IsStream: 1
   Is3D: 0
   IsOneShot: 0
   Parameters:
-  - {fileID: -3247122355911343098}
-  - {fileID: 8603503984838210569}
-  - {fileID: -6083392297535799095}
+  - {fileID: 119999118259631215}
+  - {fileID: 2703373760267691835}
+  - {fileID: -2343892766491369881}
   MinDistance: 0
   MaxDistance: 0
   Length: 36000
---- !u!114 &-6240588223463139489
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/Master.bank
-  m_EditorClassIdentifier: 
-  Path: C:/Users/3D/Documents/FMOD Studio/BsD_Fmod_Current/Build/Desktop/Master.bank
-  Name: Master
-  lastModified: 637412182510410682
-  LoadResult: 0
-  FileSizes:
-  - Name: 
-    Value: 1334400
-  Exists: 1
---- !u!114 &-6136972634392549038
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/MUS_F1/Intensity2
-  m_EditorClassIdentifier: 
-  Name: Intensity2
-  Min: 0
-  Max: 3
-  Default: 0
-  ID:
-    data1: 0
-    data2: 0
-  Exists: 0
---- !u!114 &-6083392297535799095
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/MUS_F1/VolumeSetting
-  m_EditorClassIdentifier: 
-  Name: VolumeSetting
-  Min: 0
-  Max: 1
-  Default: 1
-  ID:
-    data1: 0
-    data2: 0
-  Exists: 1
---- !u!114 &-6073913660418312807
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/MUS_F1/Health
-  m_EditorClassIdentifier: 
-  Name: Health
-  Min: 0
-  Max: 100
-  Default: 0
-  ID:
-    data1: 0
-    data2: 0
-  Exists: 1
---- !u!114 &-5772749205775834389
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/MUS_F1/Health
-  m_EditorClassIdentifier: 
-  Name: Health
-  Min: 0
-  Max: 100
-  Default: 100
-  ID:
-    data1: 0
-    data2: 0
-  Exists: 1
---- !u!114 &-5525712878593684524
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/MUS_F1/VolumeSetting
-  m_EditorClassIdentifier: 
-  Name: VolumeSetting
-  Min: 0
-  Max: 1
-  Default: 1
-  ID:
-    data1: 0
-    data2: 0
-  Exists: 1
---- !u!114 &-5455648992387920462
+--- !u!114 &-6114167729527406989
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -341,7 +59,7 @@ MonoBehaviour:
   Path: event:/Hermod/ATK_1
   guid: 59bba028113c1f4099a2e8e1a0b75b7e
   Banks:
-  - {fileID: -1888007896121541904}
+  - {fileID: -1801209842162077975}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -349,7 +67,27 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 1000
---- !u!114 &-5175132036250177817
+--- !u!114 &-2710876224802359521
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter://Intensity
+  m_EditorClassIdentifier: 
+  Name: Intensity
+  Min: 0
+  Max: 100
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Exists: 0
+--- !u!114 &-2343892766491369881
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -368,8 +106,8 @@ MonoBehaviour:
   ID:
     data1: 0
     data2: 0
-  Exists: 0
---- !u!114 &-4368037551721908189
+  Exists: 1
+--- !u!114 &-1801209842162077975
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -378,18 +116,16 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/MUS_F1/BeforeBoss
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
   m_EditorClassIdentifier: 
-  Name: BeforeBoss
-  Min: 0
-  Max: 1
-  Default: 0
-  ID:
-    data1: 0
-    data2: 0
+  Path: Assets/Fmod Build Bank/Desktop/Master.bank
+  Name: Master
+  lastModified: 637431325038957724
+  LoadResult: 0
+  FileSizes: []
   Exists: 1
---- !u!114 &-4022576042256788514
+--- !u!114 &-1631977631302749031
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -409,304 +145,6 @@ MonoBehaviour:
   - Name: 
     Value: 948
   Exists: 1
---- !u!114 &-3906174354948856006
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/MUS_F1/Health
-  m_EditorClassIdentifier: 
-  Name: Health
-  Min: 0
-  Max: 100
-  Default: 100
-  ID:
-    data1: 0
-    data2: 0
-  Exists: 1
---- !u!114 &-3474096164138190137
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/MUS_F1/VolumeSetting
-  m_EditorClassIdentifier: 
-  Name: VolumeSetting
-  Min: 0
-  Max: 1
-  Default: 1
-  ID:
-    data1: 0
-    data2: 0
-  Exists: 1
---- !u!114 &-3247122355911343098
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/MUS_F1/Health
-  m_EditorClassIdentifier: 
-  Name: Health
-  Min: 0
-  Max: 100
-  Default: 100
-  ID:
-    data1: 0
-    data2: 0
-  Exists: 1
---- !u!114 &-3243557009637306369
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/MUS_F1/Intensity2
-  m_EditorClassIdentifier: 
-  Name: Intensity2
-  Min: 0
-  Max: 3
-  Default: 0
-  ID:
-    data1: 0
-    data2: 0
-  Exists: 0
---- !u!114 &-3062093539929044328
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/MUS_F1/Health
-  m_EditorClassIdentifier: 
-  Name: Health
-  Min: 0
-  Max: 100
-  Default: 100
-  ID:
-    data1: 0
-    data2: 0
-  Exists: 0
---- !u!114 &-2804877867338752665
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/MUS_F1/Intensity2
-  m_EditorClassIdentifier: 
-  Name: Intensity2
-  Min: 0
-  Max: 3
-  Default: 0
-  ID:
-    data1: 0
-    data2: 0
-  Exists: 1
---- !u!114 &-2426763051252659965
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/MUS_F1/Intensity2
-  m_EditorClassIdentifier: 
-  Name: Intensity2
-  Min: 0
-  Max: 1
-  Default: 0
-  ID:
-    data1: 0
-    data2: 0
-  Exists: 0
---- !u!114 &-1888007896121541904
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/Master.bank
-  m_EditorClassIdentifier: 
-  Path: Assets/Fmod Build Bank/Desktop/Master.bank
-  Name: Master
-  lastModified: 637431325038957724
-  LoadResult: 0
-  FileSizes: []
-  Exists: 1
---- !u!114 &-1843263341139251656
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/MUS_F1/BeforeBoss
-  m_EditorClassIdentifier: 
-  Name: BeforeBoss
-  Min: 0
-  Max: 1
-  Default: 0
-  ID:
-    data1: 0
-    data2: 0
-  Exists: 1
---- !u!114 &-735191402503412894
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/MUS_F1/Health
-  m_EditorClassIdentifier: 
-  Name: Health
-  Min: 0
-  Max: 100
-  Default: 100
-  ID:
-    data1: 0
-    data2: 0
-  Exists: 0
---- !u!114 &-681809684411263729
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/MUS_F1/Health
-  m_EditorClassIdentifier: 
-  Name: Health
-  Min: 0
-  Max: 100
-  Default: 100
-  ID:
-    data1: 0
-    data2: 0
-  Exists: 0
---- !u!114 &-627914987425028309
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/MUS_F1/Intensity2
-  m_EditorClassIdentifier: 
-  Name: Intensity2
-  Min: 0
-  Max: 3
-  Default: 0
-  ID:
-    data1: 0
-    data2: 0
-  Exists: 1
---- !u!114 &-491793276359619621
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/MUS_F1/Intensity2
-  m_EditorClassIdentifier: 
-  Name: Intensity2
-  Min: 0
-  Max: 3
-  Default: 0
-  ID:
-    data1: 0
-    data2: 0
-  Exists: 0
---- !u!114 &-214660422626674909
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/MUS_F1/BeforeBoss
-  m_EditorClassIdentifier: 
-  Name: BeforeBoss
-  Min: 0
-  Max: 1
-  Default: 0
-  ID:
-    data1: 0
-    data2: 0
-  Exists: 1
---- !u!114 &-203394397723162246
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/MUS_F1/Intensity2
-  m_EditorClassIdentifier: 
-  Name: Intensity2
-  Min: 0
-  Max: 3
-  Default: 0
-  ID:
-    data1: 0
-    data2: 0
-  Exists: 1
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -720,59 +158,21 @@ MonoBehaviour:
   m_Name: FMODStudioCache
   m_EditorClassIdentifier: 
   EditorBanks:
-  - {fileID: -4022576042256788514}
-  - {fileID: -1888007896121541904}
+  - {fileID: -1631977631302749031}
+  - {fileID: -8577032333880846216}
+  - {fileID: -1801209842162077975}
   EditorEvents:
-  - {fileID: -6889006662740883223}
-  - {fileID: -5455648992387920462}
+  - {fileID: 2341672785631818816}
+  - {fileID: -7523224893491439031}
+  - {fileID: -6114167729527406989}
   EditorParameters: []
   MasterBanks:
-  - {fileID: -1888007896121541904}
+  - {fileID: -1801209842162077975}
   StringsBanks:
-  - {fileID: -4022576042256788514}
+  - {fileID: -1631977631302749031}
   stringsBankWriteTime: 637431325038577554
   cacheVersion: 5
---- !u!114 &545494417014633183
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/MUS_F1/Intensity2
-  m_EditorClassIdentifier: 
-  Name: Intensity2
-  Min: 0
-  Max: 3
-  Default: 0
-  ID:
-    data1: 0
-    data2: 0
-  Exists: 1
---- !u!114 &886029267365445350
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/MUS_F1/Health
-  m_EditorClassIdentifier: 
-  Name: Health
-  Min: 0
-  Max: 100
-  Default: 0
-  ID:
-    data1: 0
-    data2: 0
-  Exists: 0
---- !u!114 &1269959430471402932
+--- !u!114 &119999118259631215
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -792,107 +192,7 @@ MonoBehaviour:
     data1: 0
     data2: 0
   Exists: 1
---- !u!114 &1582459945391574570
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/MUS_F1/Health
-  m_EditorClassIdentifier: 
-  Name: Health
-  Min: 0
-  Max: 100
-  Default: 100
-  ID:
-    data1: 0
-    data2: 0
-  Exists: 1
---- !u!114 &2172780760059043688
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/MUS_F1/Health
-  m_EditorClassIdentifier: 
-  Name: Health
-  Min: 0
-  Max: 100
-  Default: 100
-  ID:
-    data1: 0
-    data2: 0
-  Exists: 1
---- !u!114 &2434776148666315270
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/MUS_F1/BeforeBoss
-  m_EditorClassIdentifier: 
-  Name: BeforeBoss
-  Min: 0
-  Max: 1
-  Default: 0
-  ID:
-    data1: 0
-    data2: 0
-  Exists: 0
---- !u!114 &2961179205391087397
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/MUS_F1/VolumeSetting
-  m_EditorClassIdentifier: 
-  Name: VolumeSetting
-  Min: 0
-  Max: 1
-  Default: 1
-  ID:
-    data1: 0
-    data2: 0
-  Exists: 0
---- !u!114 &3320590602432320531
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/MUS_F1/Health
-  m_EditorClassIdentifier: 
-  Name: Health
-  Min: 0
-  Max: 100
-  Default: 0
-  ID:
-    data1: 0
-    data2: 0
-  Exists: 1
---- !u!114 &3430237824945519501
+--- !u!114 &2341672785631818816
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -902,426 +202,26 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/MUS/MUS_F1
+  m_Name: 
   m_EditorClassIdentifier: 
-  Path: event:/MUS/MUS_F1
-  guid: 584cc65cfe79a54b8022ff7862ac3fc0
+  Path: 
+  guid: ecfe533a5e946d47b84ff76cc70c34ed
   Banks:
-  - {fileID: -6240588223463139489}
+  - {fileID: -8577032333880846216}
+  - {fileID: -8577032333880846216}
+  - {fileID: -8577032333880846216}
+  - {fileID: -8577032333880846216}
+  - {fileID: -8577032333880846216}
+  - {fileID: -8577032333880846216}
+  - {fileID: -8577032333880846216}
   IsStream: 1
-  Is3D: 0
-  IsOneShot: 0
-  Parameters:
-  - {fileID: -6073913660418312807}
-  - {fileID: 7014031797842685689}
-  - {fileID: 4007638943257931751}
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 36000
---- !u!114 &4007638943257931751
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/MUS_F1/BeforeBoss
-  m_EditorClassIdentifier: 
-  Name: BeforeBoss
-  Min: 0
-  Max: 1
-  Default: 0
-  ID:
-    data1: 0
-    data2: 0
-  Exists: 1
---- !u!114 &4427068001802439526
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/MUS_F1/Health
-  m_EditorClassIdentifier: 
-  Name: Health
-  Min: 0
-  Max: 100
-  Default: 100
-  ID:
-    data1: 0
-    data2: 0
-  Exists: 1
---- !u!114 &4615660115076514233
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/MUS_F1/Intensity2
-  m_EditorClassIdentifier: 
-  Name: Intensity2
-  Min: 0
-  Max: 3
-  Default: 0
-  ID:
-    data1: 0
-    data2: 0
-  Exists: 0
---- !u!114 &4807450044650987798
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/MUS_F1/Intensity2
-  m_EditorClassIdentifier: 
-  Name: Intensity2
-  Min: 0
-  Max: 3
-  Default: 0
-  ID:
-    data1: 0
-    data2: 0
-  Exists: 1
---- !u!114 &4979929144390147359
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/MUS_F1/Intensity2
-  m_EditorClassIdentifier: 
-  Name: Intensity2
-  Min: 0
-  Max: 3
-  Default: 0
-  ID:
-    data1: 0
-    data2: 0
-  Exists: 1
---- !u!114 &5426156350105378174
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/MUS_F1/Health
-  m_EditorClassIdentifier: 
-  Name: Health
-  Min: 0
-  Max: 100
-  Default: 100
-  ID:
-    data1: 0
-    data2: 0
-  Exists: 1
---- !u!114 &5988631894420048012
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Hermod/ATK_1
-  m_EditorClassIdentifier: 
-  Path: event:/Hermod/ATK_1
-  guid: 59bba028113c1f4099a2e8e1a0b75b7e
-  Banks:
-  - {fileID: -6240588223463139489}
-  IsStream: 0
-  Is3D: 0
+  Is3D: 1
   IsOneShot: 1
   Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 1000
---- !u!114 &6203694092470342913
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/MUS_F1/Health
-  m_EditorClassIdentifier: 
-  Name: Health
-  Min: 0
-  Max: 100
-  Default: 100
-  ID:
-    data1: 0
-    data2: 0
-  Exists: 1
---- !u!114 &6675966541724928233
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/MUS_F1/VolumeSetting
-  m_EditorClassIdentifier: 
-  Name: VolumeSetting
-  Min: 0
-  Max: 1
-  Default: 1
-  ID:
-    data1: 0
-    data2: 0
-  Exists: 1
---- !u!114 &7014031797842685689
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/MUS_F1/Intensity2
-  m_EditorClassIdentifier: 
-  Name: Intensity2
-  Min: 0
-  Max: 2
-  Default: 0
-  ID:
-    data1: 0
-    data2: 0
-  Exists: 1
---- !u!114 &7207542051703244084
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/MUS_F1/Health
-  m_EditorClassIdentifier: 
-  Name: Health
-  Min: 0
-  Max: 100
-  Default: 100
-  ID:
-    data1: 0
-    data2: 0
-  Exists: 0
---- !u!114 &7435720279133967219
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/MUS_F1/VolumeSetting
-  m_EditorClassIdentifier: 
-  Name: VolumeSetting
-  Min: 0
-  Max: 1
-  Default: 1
-  ID:
-    data1: 0
-    data2: 0
-  Exists: 1
---- !u!114 &7458648643851212251
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/MUS_F1/Health
-  m_EditorClassIdentifier: 
-  Name: Health
-  Min: 0
-  Max: 100
-  Default: 100
-  ID:
-    data1: 0
-    data2: 0
-  Exists: 0
---- !u!114 &7744118810614513686
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/MUS_F1/Intensity2
-  m_EditorClassIdentifier: 
-  Name: Intensity2
-  Min: 0
-  Max: 2
-  Default: 0
-  ID:
-    data1: 0
-    data2: 0
-  Exists: 1
---- !u!114 &8080379791469321114
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/MUS_F1/Intensity2
-  m_EditorClassIdentifier: 
-  Name: Intensity2
-  Min: 0
-  Max: 3
-  Default: 0
-  ID:
-    data1: 0
-    data2: 0
-  Exists: 1
---- !u!114 &8089695029963195894
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/Master.strings.bank
-  m_EditorClassIdentifier: 
-  Path: C:/Users/3D/Documents/FMOD Studio/BsD_Fmod_Current/Build/Desktop/Master.strings.bank
-  Name: Master.strings
-  lastModified: 637412182510490458
-  LoadResult: 0
-  FileSizes:
-  - Name: 
-    Value: 944
-  Exists: 1
---- !u!114 &8106161190233231322
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/MUS_F1/BeforeBoss
-  m_EditorClassIdentifier: 
-  Name: BeforeBoss
-  Min: 0
-  Max: 1
-  Default: 0
-  ID:
-    data1: 0
-    data2: 0
-  Exists: 0
---- !u!114 &8221981962469977941
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/MUS_F1/VolumeSetting
-  m_EditorClassIdentifier: 
-  Name: VolumeSetting
-  Min: 0
-  Max: 1
-  Default: 1
-  ID:
-    data1: 0
-    data2: 0
-  Exists: 1
---- !u!114 &8603503984838210569
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/MUS_F1/Intensity2
-  m_EditorClassIdentifier: 
-  Name: Intensity2
-  Min: 0
-  Max: 3
-  Default: 0
-  ID:
-    data1: 0
-    data2: 0
-  Exists: 1
---- !u!114 &9079832038754664548
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/MUS_F1/BeforeBoss
-  m_EditorClassIdentifier: 
-  Name: BeforeBoss
-  Min: 0
-  Max: 1
-  Default: 0
-  ID:
-    data1: 0
-    data2: 0
-  Exists: 0
---- !u!114 &9154519847164186730
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 18461
+--- !u!114 &2703373760267691835
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
