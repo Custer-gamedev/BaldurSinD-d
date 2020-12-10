@@ -17,14 +17,14 @@ public class SpawnEnemy : MonoBehaviour
 
 	public void Update()
 	{
-		/*if (Input.GetKeyDown(KeyCode.J))
-		{
-			foreach (GameObject g in enemiesList.enemiesAlive)
+		/*	if (Input.GetKeyDown(KeyCode.J))
 			{
-				g.GetComponent<EnemyStats>().hp = 0;
-			}
-			enemiesList.enemiesAlive.Clear();
-		}*/
+				foreach (GameObject g in enemiesList.enemiesAlive)
+				{
+					g.GetComponent<EnemyStats>().hp = 0;
+				}
+				enemiesList.enemiesAlive.Clear();
+			}*/
 
 	}
 	public void Spawn()
