@@ -6,6 +6,7 @@ using UnityEngine.UI;
 public class Attack : MonoBehaviour
 {
 	[Header("Basic Attack")]
+	public AudioSource ATK_SFX;
 	public float coolDownTime, attackDelay;
 	public GameObject BasicHitBox, CD;
 	public Vector3 Offset; // offset of attack from the player
@@ -45,7 +46,7 @@ public class Attack : MonoBehaviour
 		{
 			if (attackDelay <= 0)
 			{
-				FMODUnity.RuntimeManager.PlayOneShot("event:/Hermod/ATK_1");
+				ATK_SFX.Play();
 				Attacking = true;
 				halfSpeed = Player.GetComponent<PlayerStats>().speed / 2;
 				Player.GetComponent<PlayerStats>().speed = halfSpeed;

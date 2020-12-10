@@ -13,7 +13,7 @@ public class CutsceneManager : MonoBehaviour
 	public Animation textAnim;
 	public float waitTime, cutsceneLength;
 
-	private AudioSource audioSource;
+	public AudioSource audioSource;
 	bool canSkip;
 	bool floorTwoPlayed, floorThreePlayed;
 	private void Awake()
@@ -28,6 +28,7 @@ public class CutsceneManager : MonoBehaviour
 	}
 	private void Start()
 	{
+		audioSource.mute = true;
 		for (int i = 0; i < stuffToEnable.Count; i++)
 		{
 			stuffToEnable[i].SetActive(false);
@@ -42,8 +43,7 @@ public class CutsceneManager : MonoBehaviour
 
 		audioSource.Play(); */
 		videoPlayer.Play();
-		MUS_Controller.volume = 0;
-
+		
 		StartCoroutine(CanSkip());
 		StartCoroutine(IsPlaying());
 		PlayerMove.allowedToMove = false;
@@ -57,6 +57,7 @@ public class CutsceneManager : MonoBehaviour
 		{
 			if (Input.GetKeyDown(KeyCode.R))
 			{
+				
 				End();
 				canSkip = false;
 			}
@@ -69,7 +70,7 @@ public class CutsceneManager : MonoBehaviour
 		{
 			stuffToEnable[i].SetActive(true);
 		}
-		MUS_Controller.volume = 100;
+		audioSource.mute = false;
 		PlayerMove.allowedToMove = true;
 		videoPlayer.Stop();
 		Destroy(this.gameObject);

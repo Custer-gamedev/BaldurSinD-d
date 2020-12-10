@@ -15,7 +15,7 @@ public class KeepBetweenScenes : MonoBehaviour
 		if (scene.name == "MainMenu" || scene.name == "DeathScreen" || scene.name == "FloorThree")
 		{
 			print("ayaya");
-			MUS_Controller.volume = 0;
+			
 			Destroy(this.gameObject);
 		}
 	}
